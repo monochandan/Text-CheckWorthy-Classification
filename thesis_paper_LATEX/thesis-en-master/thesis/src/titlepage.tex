@@ -1,0 +1,69 @@
+%% Titelseite
+%% Vorlage $Id: titelseite.tex 61 2012-05-03 13:58:03Z bless $
+
+\def\usesf{}
+\let\usesf\sffamily % diese Zeile auskommentieren für normalen TeX Font
+
+\newsavebox{\Erstgutachter}
+\savebox{\Erstgutachter}{\usesf Prof.~Dr-Ing.~Ralf ~Schenkel}
+\newsavebox{\Zweitgutachter}
+\savebox{\Zweitgutachter}{\usesf <Name of second examiner>}
+\newsavebox{\Betreuer}
+\savebox{\Betreuer}{\usesf <Name of supervisor>}
+
+\begin{titlepage}
+\setlength{\unitlength}{1pt}
+\begin{picture}(0,0)(85,770)
+%\includegraphics[width=\paperwidth]{logos/KIT_Deckblatt}
+\end{picture}
+
+\thispagestyle{empty}
+
+%\begin{titlepage}
+%%\let\footnotesize\small \let\footnoterule\relax
+\begin{flushright}
+	\includegraphics[width=0.75\textwidth]{img/logo-trier.png}
+\end{flushright}
+\begin{center}
+\hbox{}
+\vfill
+{\usesf
+{\huge\bfseries Title of the thesis \par}
+\vskip 1.8cm
+{\huge Bachelor Thesis / Master's Thesis}\\
+\vskip 0.5cm
+for obtaining the academic degree\\
+Bachelor/Master of Science (B.Sc./M.Sc.) 
+\vskip 1.5cm
+
+{\large Universität Trier\\
+FB IV - Informatikwissenschaften\\
+Professur für Datenbanken und Informationssysteme\\}
+
+\vskip 2cm
+\begin{tabular}{p{3.5cm}l}
+Reviewer: & \usebox{\Erstgutachter} \\
+ & \usebox{\Zweitgutachter} \\
+Supervisor: & \usebox{\Betreuer} \\
+\end{tabular}
+\vskip 2cm
+submitted on xx.xx.xxxx by:\\
+\vskip .3cm
+First and last name\\
+street etc.\\
+ZIP code and city\\
+email address\\
+Matr.-Nr. 123456
+
+
+}
+\end{center}
+\vfill
+\end{titlepage}
+%% Titelseite Ende
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End: 

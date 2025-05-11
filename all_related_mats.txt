@@ -1,0 +1,351 @@
+------------------------------------------------------------
+https://checkthat.gitlab.io/clef2024/task1/
+https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1
+https://www.philschmid.de/bert-text-classification-in-a-different-language#resume
+https://medium.datadriveninvestor.com/understanding-the-log-loss-function-of-xgboost-8842e99d975d
+https://huggingface.co/docs/bitsandbytes/main/en/index#https://huggingface.co/docs/transformers/tasks/prompting
+
+spacy with llm:
+https://spacy.io/usage/large-language-models
+
+DISTILBERT
+https://huggingface.co/docs/transformers/model_doc/distilbert
+-----------------------------------------------------------
+MAIL FOR "SECOND SUPERVISOR:
+https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-ii/faecher/computerlinguistik-und-digital-humanities/team
+----------------------------------openai prompt-----------------
+https://platform.openai.com/docs/guides/prompt-engineering
+------------------------------------------------------------
+------------------------CHECKTHAT 2025 ---------------------------
+https://clef2025-labs-registration.dei.unipd.it/registrationForm.php
+--------------------------------------------------------------------
+---------------------check that 2024 ---------------------
+https://clef2024.clef-initiative.eu/publications_lncs/637930_1_En_Online_Combine_p2.pdf#page.28
+----------------------------------------------------------
+------------------------------------prompt engineering fundemnetals --------------------------
+https://github.com/dmatrix/genai-cookbook
+----------------------------------------------------------------------------------------------
+---------------------------------------PROMPTS------------------------------------------
+
+ prompt= f"Classify the following sentence '{text}' into one of the following types:"
+    f"\n1. Physical Action"
+    f"\n2. Mental Action"
+    f"\n3. State Change"
+    f"\n4. Create or Destruction"
+    f"\n5. Communication"
+    f"\n6. Movement"
+    f"\n7. Emotion or Feeling"
+    f"\n8. Perception"
+    f"\n9. Linking (State of being) Verb"
+    f"\n10. Other"
+    f"\n Generate only the sentence type:"
+
+
+
+    prompt = f"Choose one option for this following sentence '{text}':"
+    # f"\n Noise Level (Choose One):"
+    f"\n - Relevant"
+    f"\n - Noisy"
+    f"\n Generate Only the choosen option: "
+---------------------------------------------------------------------------------
+
+-------------------------------------------------BAGGING AND BOOSTING (ENSEMBLE LEARNING) -------------------------------
+https://mathchi.medium.com/weak-learners-strong-learners-for-machine-learning-e73e32f86ebd
+--------------------------------------------------------------------------------------------------------------------------
+----- CTGAN AUGMNTATION TECHNIQUE  -------------------------------------------------------------------------------------
+https://colab.research.google.com/drive/15iom9fO8j_gHg4-NlGkzWF5thMWStXwv?usp=sharing#scrollTo=hqAoqcFNHL4I
+-----------------------------------------------------------------------------------------------------------
+
+
+3. Exploratory Data Analysis (EDA)
+Class Balance Check: Check if the dataset is balanced between check-worthy and not check-worthy classes.
+Text Length Analysis: Plot or analyze the average length of sentences for each class to see if there are notable differences.
+Word Frequency Analysis: Look at common words or phrases in each class to see if there are patterns.
+4. Feature Engineering
+N-grams: Create features using n-grams (bigrams or trigrams) to capture the context in short sequences.
+Sentiment Analysis: Use a pre-trained sentiment model to add a sentiment score for each statement.
+Named Entity Recognition (NER): Extract entities (e.g., people, organizations) and check their frequency or relevance.
+5. Model Selection and Baseline Training
+Choose a Model: Start with a simple classifier (like Logistic Regression or Naive Bayes) as a baseline.
+Convert Text to Numeric Features: Use TF-IDF vectorization or word embeddings (e.g., Word2Vec, BERT embeddings) to represent text numerically.
+Train the Model: Train the model on your feature set using a train/test split.
+6. Evaluate the Model
+Metrics: Use metrics such as accuracy, precision, recall, and F1-score to evaluate model performance on the check-worthy class.
+Baseline Comparison: Compare results to a random classifier to confirm that the model captures meaningful patterns.
+7. Iterate and Improve
+Hyperparameter Tuning: Experiment with hyperparameters to improve accuracy.
+Feature Expansion: Add or modify features to improve detection accuracy, like using contextual embeddings (BERT or similar).
+Experiment with Advanced Models: Once the baseline is set, try advanced models like fine-tuned BERT or another transformer for potentially better performance.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+Accuracy for model name:logistic regression and feature set: vader sentiment: 0.7540546545212176
+classification report for logistic regression with vader Sentiment:
+              precision    recall  f1-score   support
+
+           0       0.75      1.00      0.86      3394
+           1       0.00      0.00      0.00      1107
+
+    accuracy                           0.75      4501
+   macro avg       0.38      0.50      0.43      4501
+weighted avg       0.57      0.75      0.65      4501
+
+
+1. Accuracy:
+0.75 or 75% is the overall accuracy of the model.
+Accuracy is the percentage of correct predictions (both positive and negative) divided by the total number of predictions.
+In this case, the model correctly predicted 75% of the instances.
+2. Precision, Recall, F1-Score, Support:
+These metrics are reported for each class (0 and 1). Here:
+
+Class 0: This class corresponds to the negative class (e.g., "not check-worthy").
+
+Class 1: This class corresponds to the positive class (e.g., "check-worthy").
+
+Precision:
+
+For Class 0: 0.75 → Out of all the instances the model predicted as Class 0, 75% were actually Class 0.
+For Class 1: 0.00 → Out of all the instances the model predicted as Class 1, 0% were actually Class 1. This means the model is not predicting Class 1 correctly at all.
+Recall:
+
+For Class 0: 1.00 → The model correctly identified all the actual Class 0 instances (100% recall).
+For Class 1: 0.00 → The model failed to identify any actual Class 1 instances (0% recall).
+F1-Score:
+
+For Class 0: 0.86 → The harmonic mean of precision and recall for Class 0, indicating the model performs well for this class.
+For Class 1: 0.00 → The harmonic mean of precision and recall for Class 1, which is very poor since both precision and recall are 0.
+Support:
+
+For Class 0: 3394 → There are 3394 instances of Class 0 in the test data.
+For Class 1: 1107 → There are 1107 instances of Class 1 in the test data.
+Total Support (4501): Total number of instances in the test data.
+3. Macro Average:
+Macro avg (Precision): 0.38 → The average of the precision scores for both classes. Since Class 1 has very poor precision, this affects the macro average.
+Macro avg (Recall): 0.50 → The average of the recall scores for both classes. Class 0's recall is very high, but Class 1's recall is 0, so the average is 50%.
+Macro avg (F1-Score): 0.43 → The average of the F1-scores for both classes.
+4. Weighted Average:
+Weighted avg (Precision): 0.57 → This takes into account the support of each class and gives more importance to the larger class (Class 0). It's a more representative measure of precision across both classes.
+Weighted avg (Recall): 0.75 → Again, this is weighted by the class sizes, indicating that Class 0 is well-predicted, but Class 1 is poorly predicted.
+Weighted avg (F1-Score): 0.65 → A better overall measure of the model's performance, considering both class sizes and F1 scores.
+Interpretation of Results:
+The model has high precision and recall for Class 0, meaning it correctly identifies most of the instances of Class 0.
+However, the model performs very poorly on Class 1, with both precision and recall equal to 0. This suggests that the model does not predict Class 1 (check-worthy) at all.
+The overall accuracy is 75%, but this is misleading since the model is not learning to predict Class 1. It's mainly predicting Class 0 (not check-worthy).
+Conclusion:
+The model is biased towards Class 0 (not check-worthy). This could be due to an imbalance in the dataset where Class 0 is much more frequent than Class 1.
+The classification metrics for Class 1 (check-worthy) are a concern and need improvement. You might consider balancing the dataset (e.g., using oversampling or undersampling techniques), tuning the model, or trying different models to improve the prediction for Class 1.
+---------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+
+datasets with columns:
+
+add_embedding_features_9.csv
+
+	'Sentence_id', 'Text', 'class_label', 'Tokens', 'text_length',
+       'sentiment_score_veda', 'sentiment_score_textblob',
+       'sentiment_score_bert', 'sentiment_score_roberta', 'bert_sent_neg',
+       'bert_sent_pos', 'roberta_sent_neg', 'roberta_sent_neut',
+       'roberta_sent_mixed', 'roberta_sent_pos', 'labels', 'names',
+       'organizations', 'locations', 'dates', 'verbs', 'action_verbs',
+       'filtered_action_verbs', 'joined_tokens', 'count_verb',
+       'count_action_verb', 'count_filtered_action_verb', 'count_tokens',
+       'cleaned_text', 'cleaned_text_length', 'contains_question_mark',
+       'contains_exclamation', 'contains_ellipsis', 'num_exclamations',
+       'num_questions', 'num_ellipses', 'punctuation_count', 'embedding'
+
+
+
+
+
+07_01_data.csv
+
+	'Sentence_id', 'Text', 'class_label', 'label', 'Tokens', 'text_length',
+       'cleaned_text', 'cleaned_text_length', 'vader_neg', 'vader_neu',
+       'vader_pos', 'vader_compound', 'roberta_sentiment', 'roberta_sent_pos',
+       'roberta_sent_neg', 'roberta_sent_mixed', 'sentiment_class',
+       'is_positive', 'is_negative', 'is_mixed', 'count_tokens',
+       'punctuation_count', 'counts', 'names', 'organizations', 'dates'
+
+
+
+
+
+Here's a version tailored for the Intern Business & Web Analytics (f/m/d) position at Mytheresa:
+
+"I am excited to apply for the Intern Business & Web Analytics position at Mytheresa. With a strong background in data science, proficiency in SQL, Python, and data visualization tools such as Power BI, and practical experience in analytical problem-solving, I am eager to contribute to your team's success. My passion for deriving actionable insights from data aligns perfectly with Mytheresa's focus on innovation and exceeding customer expectations. I am enthusiastic about the opportunity to grow within your dynamic and international team. Thank you for considering my application!"
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+LLM MODELS:
+
+https://docs.cohere.com/
+https://cohere.com/blog/command-r7b?utm_medium=email&_hsenc=p2ANqtz--lm4Pe9Q9SS8Yxk0zCvW6JLmwS1spCrb-JSWnmafDaotg9NU2TZXYONS43DE0f5ai4MdimKu57oCY-_t35cGEBkR2Nog&_hsmi=339237195&utm_content=339237195&utm_source=hs_email
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LINKS AND DATASETS:
+
+https://github.com/isyufeng/FactFinders/tree/main
+
+https://mlscientist.com/
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+IMBALANCE LEARNING :
+
+i want to take same ratio of imbalance dataset but, cut down to small data set and check various imbalance techniques.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WEB LINKS
+
+hyperparametetr tuning
+https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
+
+resampling:
+https://www.kaggle.com/code/rafjaa/resampling-strategies-for-imbalanced-datasets/notebook
+
+hugging face
+https://huggingface.co/docs/transformers/main/en/model_doc/bert#resources
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+. check the best max_features for tf idf
+. generate tf idf
+. train model 
+. test model
+. watch find best features for binary classfication
+
+---------------------------------------------------------------------------------------------------------------
+MemoryError: Unable to allocate 10.2 TiB for an array with shape (22501, 10011) and data type <U12480
+
+X = np.hstack([tfidf_features_np,embeddings_np, additional_features_np])
+y = new_df['labels']
+---------------------------------------------------------------------------------------------------------------
+
+Here’s a list of techniques to handle imbalanced text data:
+
+1. Data-Level Techniques (Resampling)
+🔹 Undersampling – Remove instances from the majority class.
+🔹 Oversampling – Duplicate or generate new instances of the minority class (e.g., SMOTE).
+🔹 Hybrid Sampling – Combine both oversampling and undersampling for balance.
+
+2. Algorithm-Level Techniques
+🔹 Class Weights – Assign higher weights to minority class during training (e.g., class_weight='balanced' in RandomForestClassifier).
+🔹 Cost-Sensitive Learning – Penalize misclassification of the minority class more heavily.
+🔹 Threshold Moving – Adjust the decision threshold to favor the minority class.
+
+3. Feature Engineering Techniques
+🔹 TF-IDF Balancing – Normalize term importance based on class distribution.
+🔹 Synthetic Feature Creation – Generate meaningful features (e.g., embeddings, linguistic cues).
+🔹 Data Augmentation – Generate paraphrases or use back-translation for minority class.
+
+4. Model-Level Approaches
+🔹 Ensemble Models – Combine multiple models (e.g., Bagging, Boosting, Stacking) to handle imbalance.
+🔹 Anomaly Detection Models – Treat minority class as an anomaly (e.g., One-Class SVM).
+🔹 Transformer Models – Use pretrained transformers (e.g., BERT, RoBERTa) trained on balanced datasets.
+
+5. Evaluation Strategies
+🔹 F1-score & Precision-Recall Curve – Instead of accuracy, focus on F1-score and PR curve.
+🔹 Stratified Cross-Validation – Ensures all classes are well-represented in each fold.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+🔥 Final Summary
+Step	Action	Method
+1	Baseline Model		Train BERT/RoBERTa on original data
+2	Augment Yes Class	Use Back Translation, BERT Augmenter, or T5 Paraphrasing
+3	Train on Augmented Data	Keep No = 17088, Increase Yes ~ 10000
+4	Validate on Dev Set	Compare F1-score, Precision, Recall
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+i want to use wcbtfidf to generate tfidf features and than merge with other features such as 10 features created by me, and embeddings
+
+
+wtf = wcbtfidf(max_features = max_feat)
+wtf.fit(text_data, label)
+tset_df = wtf.transform(text_data) # cleaned tokenize, lemmatize
+
+train_df = wtf.transform(text_data) # cleaned tokenize, lemmatize
+
+stack all other features with the wtf features , stacked_features
+
+model.fit(stacked_features, label)
+
+y_pred = model.predict(stacked_features from train data)
+
+
+----------------------------------------------DEEPSEAK------------------------------------------
+https://api-docs.deepseek.com/news/news250120
+----------------------------------------------------------------------------------------
+HYPERPARAMETER TUNING 
+
+for RFC: 10000 tfidf
+best_params = {'n_estimators': 800,
+ 'min_samples_split': 5,
+ 'min_samples_leaf': 1,
+ 'max_features': 'sqrt',
+ 'max_depth': 90,
+ 'bootstrap': False}
+
+for RFC: 6300 tfidf
+
+{'n_estimators': 800,
+ 'min_samples_split': 5,
+ 'min_samples_leaf': 1,
+ 'max_features': 'sqrt',
+ 'max_depth': 90,
+ 'bootstrap': False}
+
+for RFC: 4300 tfidf
+
+
+
+additional_features = new_df[['text_length', 'roberta_sent_neg', 'roberta_sent_mixed',
+                            'roberta_sent_pos', 'names', 'organizations', 'dates',
+                            'count_tokens', 'cleaned_text_length', 'punctuation_count']].to_numpy()
+
+
+pca = PCA(n_components = 50)
+reduced_embeddings = pca.fit_transform(new_df['converted_embedding'].to_list())
+
+
+for XGBOOST
+
+10000 tfidf
+
+{'learning_rate': 0.09460545700275623,
+ 'max_depth': 20,
+ 'n_estimators': 400,
+ 'subsample': 0.5115069174630871} 'bootstrap': False}
+
+4300 tfidf
+
+
+
+
+
+additional_features = new_df[['text_length', 'roberta_sent_neg', 'roberta_sent_mixed',
+                            'roberta_sent_pos', 'names', 'organizations', 'dates',
+                            'count_tokens', 'cleaned_text_length', 'punctuation_count']].to_numpy()
+
+
+pca = PCA(n_components = 50)
+reduced_embeddings = pca.fit_transform(new_df['converted_embedding'].to_list())
+
+
+
+-----------------------------------06.03---------------------------------------------
+balanced bagging : https://medium.com/@nageshmashette32/balanced-bagging-classifier-bagging-for-imbalanced-classification-dfba66c44c14
+week learner strong learner : https://mathchi.medium.com/weak-learners-strong-learners-for-machine-learning-e73e32f86ebd
+
+
+
+-------------------------------------------------------------------06.04.2025----------------------------------------------------
+Data Synthesizing - X_train, marged_data[label] -- array of minor data -- 2d array -- dataframe -- synthesize
+
+We recommend preprocessing discrete columns that can have many values, using 'update_transformers'. Or you may drop columns that are not necessary to model. (Exit this script using ctrl-C)
+
+PerformanceAlert: Using the CTGANSynthesizer on this data is not recommended. To model this data, CTGAN will generate a large number of columns.
+
+

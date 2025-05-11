@@ -1,0 +1,39 @@
+# Ignore all .env files, including in subdirectories (already works)
+*.env
+tweet_data_scraping\.env
+
+# Ignore specific folders
+# clef2024-checkthat-lab-main/
+cleif_2025/
+created_new_dev_data/
+created_new_train_data/
+created_new_test_data/
+# clef2024-checkthat-lab-main/
+data/
+master_thesis/
+archive/
+documents/
+__pycache__/
+data_after_sampled/
+models/
+# Ignore common file types
+*.pdf
+*.docx
+*.doc
+*.pptx  
+*.ppt
+*.png
+*.jpg
+*.jpeg
+°.csv
+
+# Ignore specific files
+text_embedding.csv
+decribe.csv
+thesis_en_masterr(1).zip
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore folders
+Bagging/

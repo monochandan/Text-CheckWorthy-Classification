@@ -1,0 +1,195 @@
+RFC (tfidf - 4300, pca = 356)
+best_params = {
+'n_estimators': 800,
+ 'min_samples_split': 5,
+ 'min_samples_leaf': 1,
+ 'max_features': 'sqrt',
+ 'max_depth': 90,
+ 'bootstrap': False
+}
+
+new best params : 7.03.25: 
+
+{'bootstrap': False,
+ 'ccp_alpha': 0.01,
+ 'class_weight': 'balanced',
+ 'criterion': 'entropy',
+ 'max_depth': 30,
+ 'max_features': 'sqrt',
+ 'min_impurity_decrease': 0.01,
+ 'min_samples_leaf': 4,
+ 'min_samples_split': 2,
+ 'n_estimators': 1788}
+---------------------------------------------------------
+XGBoost
+
+{
+'learning_rate': 0.09460545700275623,
+ 'max_depth': 20,
+ 'n_estimators': 400,
+ 'subsample': 0.5115069174630871} 'bootstrap': False
+}
+
+best_params = {
+    'learning_rate': 0.09460545700275623,
+    'max_depth': 10,  # Originally tested with 20
+    'n_estimators': 400,
+    'subsample': 0.8,  # Originally 0.5115069174630871
+    'colsample_bytree': 0.8,
+    'tree_method': 'hist'
+}
+
+new best params : 7.03.25
+
+{'colsample_bytree': 1.0,
+ 'eval_metric': 'logloss',
+ 'gamma': 0,
+ 'learning_rate': 0.05,
+ 'max_depth': 30,
+ 'min_child_weight': 5,
+ 'n_estimators': 1742,
+ 'objective': 'binary:logistic',
+ 'reg_alpha': 0,
+ 'reg_lambda': 0.01,
+ 'scale_pos_weight': 5,
+ 'subsample': 0.6}
+---------------------------------------------------------------
+DecisionTree : 356 pca, 4300 tfidf , extra features 7.3
+{'ccp_alpha': 0.01,
+ 'class_weight': 'balanced',
+ 'criterion': 'log_loss',
+ 'max_depth': 10,
+ 'max_features': None,
+ 'max_leaf_nodes': 10,
+ 'min_samples_leaf': 1,
+ 'min_samples_split': 2,
+ 'splitter': 'best'}
+----------------------------------------------------------------
+Logistic Regression
+-------------------------------------------------------------------
+SVM
+-----------------------------------------------------------------
+NN
+------------------------------------------------------------------
+KNN 7.3
+{'metric': 'minkowski', 'n_neighbors': 3, 'p': 2, 'weights': 'distance'}
+------------------------------------------------------------------
+AdaBoost 8.3 ( using A100 GPU (41 mins), T4 took more than 2.34 hrs and not finished)
+{'learning_rate': 0.34370861113902185, 'n_estimators': 153}
+---------------------------------------------------------------------
+GradientBoosting 8.3
+{'learning_rate': 0.27616382277289797,
+ 'max_depth': 3,
+ 'max_features': None,
+ 'min_samples_leaf': 5,
+ 'min_samples_split': 16,
+ 'n_estimators': 255,
+ 'subsample': 0.9244569121330419}
+----------------------------------------------------------------------
+LightGBM 8.3
+{'bagging_fraction': 0.856135294962221,
+ 'bagging_freq': 4,
+ 'feature_fraction': 0.6424202471887338,
+ 'lambda_l1': 0.036886947354532795,
+ 'lambda_l2': 0.6095643339798968,
+ 'learning_rate': 0.16080370696865845,
+ 'max_depth': 8,
+ 'min_child_samples': 32,
+ 'n_estimators': 278,
+ 'num_leaves': 20}
+----------------------------------------------------------------------
+BEST PARAMETERS FROM DIFFERENT RESAMPLING TECHNIQUES:
+#### UNDER SAMPLING ##########
+sampler: RandomUnderSampler() | classifier: RandomForestClassifier(random_state=42)
+best parameters: {'sampler__sampling_strategy': 'majority', 'sampler__random_state': 42}
+best score: 0.7058311020061159
+
+-----------------------------------------------------------------------------------------------------------------------------
+Technique: RandomUnderSampler_rfc_pt
+pipeline object: Pipeline(steps=[('sampler', RandomUnderSampler()),
+                ('classifier',
+                 RandomForestClassifier(bootstrap=False, ccp_alpha=0.01,
+                                        class_weight='balanced',
+                                        criterion='entropy', max_depth=30,
+                                        min_impurity_decrease=0.01,
+                                        min_samples_leaf=4, n_estimators=1788,
+                                        random_state=42))])
+Parameter grid: {'sampler__sampling_strategy': ['majority', 'not minority', 'not majority', 'all', 'auto'], 'sampler__random_state': [42]}
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+sampler: RandomUnderSampler() | classifier: RandomForestClassifier(bootstrap=False, ccp_alpha=0.01, class_weight='balanced',
+                       criterion='entropy', max_depth=30,
+                       min_impurity_decrease=0.01, min_samples_leaf=4,
+                       n_estimators=1788, random_state=42)
+best parameters: {'sampler__sampling_strategy': 'majority', 'sampler__random_state': 42}
+best score: 0.6487341942988798
+------------------------------------------------------------------------------------------------------------------------------
+sampler: RandomUnderSampler() | classifier: XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)
+best parameters: {'sampler__sampling_strategy': 'majority', 'sampler__random_state': 42}
+best score: 0.7547961832155984
+--------------------------------------------------------------------------------------------------------------------------------
+sampler: EditedNearestNeighbours() | classifier: RandomForestClassifier(random_state=42)
+best parameters: {'sampler__sampling_strategy': 'not minority', 'sampler__n_neighbors': 4, 'sampler__n_jobs': -1, 'sampler__kind_sel': 'mode'}
+best score: 0.6692601123926599
+----------------------------------------------------------------------------------------------------------------------------------
+sampler: EditedNearestNeighbours() | classifier: XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)
+best parameters: {'sampler__sampling_strategy': 'not minority', 'sampler__n_neighbors': 4, 'sampler__n_jobs': -1, 'sampler__kind_sel': 'mode'}
+best score: 0.7512777534626796
+-------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+### OVER SAMPLING#######
+-------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+
+
+
+### MIXED SAMPLING #######
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
