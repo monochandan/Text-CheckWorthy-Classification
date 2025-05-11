@@ -6,7 +6,7 @@ This project addresses the growing need to identify claims worth fact-checking, 
 
 - How to handle imbalance text data.
   
-- Prompt engineering for data labeling and data processing.
+- Prompt engineering (few shot, zero shot) for data labeling and data processing.
 
 - Tweet data scrapping for validate the model, prompt engineering for label automation.
   
