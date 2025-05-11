@@ -119,3 +119,7 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 | Recall     | 0.9370       |
 
 ## This result has already surpassed the best scores from CLEF 2024, as seen [here](https://checkthat.gitlab.io/clef2024/task1/).
+
+[credit](https://checkthat.gitlab.io/clef2024/task1/)
+<img width="506" alt="image" src="https://github.com/user-attachments/assets/e5e0c9f1-8f0a-485d-9d55-04adc89a4833" />
+
