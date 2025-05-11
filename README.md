@@ -4,7 +4,9 @@ This project addresses the growing need to identify claims worth fact-checking, 
 
 ## Key contributions include:
 
-- How to handle imbalance text data
+- How to handle imbalance text data.
+  
+- Prompt engineering for data labeling and data processing
 
 - Evaluation of linguistic, contextual, and semantic features.
 
@@ -14,12 +16,12 @@ This project addresses the growing need to identify claims worth fact-checking, 
 
 - Preliminary results show ensemble-based classical models outperform current CLEF 2024 LLM-based baselines.
 
-- Fine-tuning encoder LLM Model with QLoRA also give performance compared to LoRA.
+- Fine-tuning encoder, decoder state of the art LLM Model with QLoRA also give performance compared to LoRA.
 
 
 With the rapid rise of online misinformation, it's increasingly important to prioritize which claims are worth fact-checking. Check-worthiness estimation tackles this by classifying whether a statement—like a tweet or debate quote—merits verification. However, challenges such as subjectivity, data imbalance, and linguistic ambiguity make this task difficult.
 
-While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance from transformer-based and LLM-based models (e.g., RoBERTa, GPT-4, LLaMA2), these often demand high computational resources. This project explores whether ensemble-based traditional ML models, supported by resampling techniques, can remain competitive. We also experiment with QLoRA for memory-efficient fine-tuning of large models, offering a practical alternative to resource-heavy approaches.
+While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance from transformer-based and LLM-based models (e.g., RoBERTa, GPT-4, LLaMA2), these often demand high computational resources. This project explores whether ensemble-based traditional ML models, supported by resampling techniques, can remain competitive. We also experiment with [QLoRA](https://arxiv.org/abs/2305.14314) for memory-efficient fine-tuning of large models, offering a practical alternative to resource-heavy approaches.
 
 
 
