@@ -37,4 +37,4 @@ thesis_en_masterr(1).zip
 # Ignore folders
 Bagging/
 LLM_with_op/
-tweet_data_scraping\with_op_files
+tweet_data_scraping/with_op_files/
