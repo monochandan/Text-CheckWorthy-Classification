@@ -31,7 +31,8 @@ models/
 text_embedding.csv
 decribe.csv
 thesis_en_masterr(1).zip
-
+generate_feature_for_scrapped_tweet_data_zero_shot_prompt_falcon_7b.ipynb
+create_appropriate_columns_after_cleaning_tweet_data.ipynb
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
