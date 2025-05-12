@@ -2,7 +2,7 @@
 
 This project addresses the growing need to identify claims worth fact-checking, especially in the age of widespread misinformation. Focusing on English-language datasets from U.S. presidential debate transcripts, we apply a range of resampling methods to tackle data imbalance and explore multiple machine learning approaches from traditional models to fine-tuned LLMs using memory-efficient techniques like QLoRA.
 
-## Key contributions include:
+## Key contributions include :
 
 - How to handle imbalance text data.
   
@@ -21,6 +21,8 @@ This project addresses the growing need to identify claims worth fact-checking, 
 - Preliminary results show ensemble-based classical models outperform current CLEF 2024 LLM-based baselines.
 
 - Fine-tuning encoder, decoder state of the art LLM Model with [QLoRA](https://huggingface.co/docs/peft/main/en/developer_guides/quantization) also give performance compared to LoRA.
+  
+- Using both structured and unstructured data sources, create retrieval-augmented LLM pipelines for claim checkworthiness development. which will highlight the value of the RAG system in determining check worthiness.
 
 
 With the rapid rise of online misinformation, it's increasingly important to prioritize which claims are worth fact-checking. Check-worthiness estimation tackles this by classifying whether a statement like a tweet or debate quote-merits verification. However, challenges such as subjectivity, data imbalance, and linguistic ambiguity make this task difficult.
