@@ -4,7 +4,7 @@ This research addresses the growing need to identify claims worth fact-checking,
 
 ## Key contributions include :
 
-- How to handle imbalance text data.
+- How to handle huge ammount of imbalance text data.
   
 - Prompt engineering (few shot, zero shot) for data labeling and data processing.
 
