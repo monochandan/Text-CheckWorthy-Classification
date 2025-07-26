@@ -138,6 +138,47 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 | Recall     | 0.721 |
 | F1 Score   | 0.725 |
 
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.635</td>
+    <td align="center">0.788</td>
+    <td align="center">0.635</td>
+    <td align="center">0.663</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.721</td>
+    <td align="center">0.729</td>
+    <td align="center">0.721</td>
+    <td align="center">0.725</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.763</td>
+    <td align="center">0.822</td>
+    <td align="center">0.763</td>
+    <td align="center">0.779</td>
+  </tr>
+</table>
+
+
+
 ### 🤖 K-Nearest Neighbors (KNN)
 
 | Metric     | Value |
@@ -147,6 +188,48 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 | Recall     | 0.674 |
 | F1 Score   | 0.670 |
 
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.768</td>
+    <td align="center">0.732</td>
+    <td align="center">0.768</td>
+    <td align="center">0.736</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.674</td>
+    <td align="center">0.666</td>
+    <td align="center">0.674</td>
+    <td align="center">0.670</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.673</td>
+    <td align="center">0.691</td>
+    <td align="center">0.673</td>
+    <td align="center">0.681</td>
+  </tr>
+</table>
+
+
+
+
 ### 🚀 XGBoost Classifier (XGB)
 
 | Metric     | Value |
@@ -155,6 +238,45 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 | Precision  | 0.805 |
 | Recall     | 0.795 |
 | F1 Score   | 0.799 |
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.956</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.795</td>
+    <td align="center">0.805</td>
+    <td align="center">0.795</td>
+    <td align="center">0.799</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.925</td>
+    <td align="center">0.930</td>
+    <td align="center">0.925</td>
+    <td align="center">0.926</td>
+  </tr>
+</table>
 
 ### Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
 
