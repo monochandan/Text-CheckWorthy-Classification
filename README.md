@@ -49,7 +49,7 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 ### BenchMark Dataset from [CLEF2024](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
 <table>
   <tr>
-    <td><img width="354" height="125" alt="Image" src="https://github.com/user-attachments/assets/1972b9f8-74c5-4f59-b78c-a16da0107f70" /></td>
+    <td><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/1972b9f8-74c5-4f59-b78c-a16da0107f70" /></td>
       <!--<td><img width="567" height="455" alt="Image" src="https://github.com/user-attachments/assets/36c503fd-e726-456e-89c8-a5269982c679" /></td>-->
   </tr>
 </table>
