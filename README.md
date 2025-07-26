@@ -54,38 +54,351 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
   </tr>
 </table>
 
-### 🔀 Voting Classifier (7 Models: RF, XGB, DT, KNN, GDB, LGBM, ADB)
+### 1. Voting Classifier (4 Models: 'dt', 'knn', 'rf', 'xgb')
 
-| Metric     | Value |
-|------------|-------|
-| Accuracy   | 0.827 |
-| Precision  | 0.821 |
-| Recall     | 0.827 |
-| F1 Score   | 0.823 |
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.934</td>
+    <td align="center">0.934</td>
+    <td align="center">0.934</td>
+    <td align="center">0.931</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.895</td>
+    <td align="center">0.898</td>
+    <td align="center">0.895</td>
+    <td align="center">0.896</td>
+  </tr>
+</table>
   
-### 🔀 Voting Classifier (3 Models: GDB, LGBM, ADB)
 
-| Metric     | Value |
-|------------|-------|
-| Accuracy   | 0.809 |
-| Precision  | 0.806 |
-| Recall     | 0.809 |
-| F1 Score   | 0.808 |
 
-### 🔀 Voting Classifier (5 Models: DT, KNN, RF, XGB, ADB)
 
-| Metric     | Value |
+### 2. Voting Classifier (6 Models: 'rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb')
+
+<!--| Metric     | Value |
 |------------|-------|
 | Accuracy   | 0.801 |
 | Precision  | 0.793 |
 | Recall     | 0.801 |
-| F1 Score   | 0.796 |
+| F1 Score   | 0.796 |-->
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.946</td>
+    <td align="center">0.947</td>
+    <td align="center">0.946</td>
+    <td align="center">0.945</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+   <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.924</td>
+    <td align="center">0.924</td>
+    <td align="center">0.924</td>
+    <td align="center">0.924</td>
+  </tr>
+</table>
+
+### 3. Voting Classifier (3 Models: 'gdb', 'lgbm', 'adb')
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.801 |
+| Precision  | 0.793 |
+| Recall     | 0.801 |
+| F1 Score   | 0.796 |-->
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.943</td>
+    <td align="center">0.945</td>
+    <td align="center">0.943</td>
+    <td align="center">0.941</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+   <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.925</td>
+    <td align="center">0.925</td>
+    <td align="center">0.925</td>
+    <td align="center">0.925</td>
+  </tr>
+</table>
+
+### 4. Voting Classifier (8 Hyperparameter Tuned Models: 'dt', 'knn', 'rf', 'xgb', 'adb')
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.801 |
+| Precision  | 0.793 |
+| Recall     | 0.801 |
+| F1 Score   | 0.796 |-->
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.934</td>
+    <td align="center">0.936</td>
+    <td align="center">0.934</td>
+    <td align="center">0.931</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.895</td>
+    <td align="center">0.898</td>
+    <td align="center">0.895</td>
+    <td align="center">0.896</td>
+  </tr>
+</table>
+
+### 5. Voting Classifier (3 Models: 'rf', 'xgb', 'dt')
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.801 |
+| Precision  | 0.793 |
+| Recall     | 0.801 |
+| F1 Score   | 0.796 |-->
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.953</td>
+    <td align="center">0.953</td>
+    <td align="center">0.953</td>
+    <td align="center">0.953</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+   <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.914</td>
+    <td align="center">0.919</td>
+    <td align="center">0.914</td>
+    <td align="center">0.916</td>
+  </tr>
+</table>
+
+### 6. Voting Classifier (4 Models: 'xgb', 'lgbm', 'adb', 'lr')
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.801 |
+| Precision  | 0.793 |
+| Recall     | 0.801 |
+| F1 Score   | 0.796 |-->
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.958</td>
+    <td align="center">0.958</td>
+    <td align="center">0.958</td>
+    <td align="center">0.958</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+   <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.919</td>
+    <td align="center">0.924</td>
+    <td align="center">0.919</td>
+    <td align="center">0.921</td>
+  </tr>
+</table>
+
+### 7. Voting Classifier (8 Hyperparameter Tuned Models: 'dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr')
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.801 |
+| Precision  | 0.793 |
+| Recall     | 0.801 |
+| F1 Score   | 0.796 |-->
+
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.956</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+   <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.926</td>
+    <td align="center">0.928</td>
+    <td align="center">0.926</td>
+    <td align="center">0.927</td>
+  </tr>
+</table>
 
 ### Blending Classifier (Working)
 
 ### Stacking Classifier (Working)
 
-### 🌲 Random Forest Classifier (RFC)
+### Random Forest Classifier (RFC)
 
 <table border="1">
   <tr>
@@ -129,14 +442,14 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 
 
 
-### 🌳 Decision Tree Classifier (DT)
+### Decision Tree Classifier (DT)
 
-| Metric     | Value |
+<!--| Metric     | Value |
 |------------|-------|
 | Accuracy   | 0.721 |
 | Precision  | 0.729 |
 | Recall     | 0.721 |
-| F1 Score   | 0.725 |
+| F1 Score   | 0.725 |-->
 
 <table border="1">
   <tr>
@@ -179,14 +492,14 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 
 
 
-### 🤖 K-Nearest Neighbors (KNN)
+### K-Nearest Neighbors (KNN)
 
-| Metric     | Value |
+<!--| Metric     | Value |
 |------------|-------|
 | Accuracy   | 0.674 |
 | Precision  | 0.666 |
 | Recall     | 0.674 |
-| F1 Score   | 0.670 |
+| F1 Score   | 0.670 |-->
 
 <table border="1">
   <tr>
@@ -230,14 +543,14 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 
 
 
-### 🚀 XGBoost Classifier (XGB)
+### XGBoost Classifier (XGB)
 
-| Metric     | Value |
+<!--| Metric     | Value |
 |------------|-------|
 | Accuracy   | 0.795 |
 | Precision  | 0.805 |
 | Recall     | 0.795 |
-| F1 Score   | 0.799 |
+| F1 Score   | 0.799 |-->
 
 <table border="1">
   <tr>
@@ -275,6 +588,198 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
     <td align="center">0.930</td>
     <td align="center">0.925</td>
     <td align="center">0.926</td>
+  </tr>
+</table>
+
+### Gradient Boosting Classifier (GDB)
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.795 |
+| Precision  | 0.805 |
+| Recall     | 0.795 |
+| F1 Score   | 0.799 |-->
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.956</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.795</td>
+    <td align="center">0.805</td>
+    <td align="center">0.795</td>
+    <td align="center">0.799</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.910</td>
+    <td align="center">0.911</td>
+    <td align="center">0.910</td>
+    <td align="center">0.911</td>
+  </tr>
+</table>
+
+### Light GBM Classifier
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.795 |
+| Precision  | 0.805 |
+| Recall     | 0.795 |
+| F1 Score   | 0.799 |-->
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.956</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.795</td>
+    <td align="center">0.805</td>
+    <td align="center">0.795</td>
+    <td align="center">0.799</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.921</td>
+    <td align="center">0.921</td>
+    <td align="center">0.921</td>
+    <td align="center">0.921</td>
+  </tr>
+</table>
+
+### Ada Boost Classifier
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.795 |
+| Precision  | 0.805 |
+| Recall     | 0.795 |
+| F1 Score   | 0.799 |-->
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.956</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.795</td>
+    <td align="center">0.805</td>
+    <td align="center">0.795</td>
+    <td align="center">0.799</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.906</td>
+    <td align="center">0.904</td>
+    <td align="center">0.906</td>
+    <td align="center">0.904</td>
+  </tr>
+</table>
+
+### Logistic Regression
+
+<!--| Metric     | Value |
+|------------|-------|
+| Accuracy   | 0.795 |
+| Precision  | 0.805 |
+| Recall     | 0.795 |
+| F1 Score   | 0.799 |-->
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.957</td>
+    <td align="center">0.956</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.795</td>
+    <td align="center">0.805</td>
+    <td align="center">0.795</td>
+    <td align="center">0.799</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.826</td>
+    <td align="center">0.869</td>
+    <td align="center">0.826</td>
+    <td align="center">0.836</td>
   </tr>
 </table>
 
