@@ -89,8 +89,8 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 
 <table>
   <tr>
-    <td>
     <td align="center">BenchMark Data (Not Checkworthy: 17088, Checkworthy: 5413)</td>
+    <td>
     | Metric     | Value |
     |------------|-------|
     | Accuracy   | 0.825 |
