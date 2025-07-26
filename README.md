@@ -46,6 +46,15 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 - LGBM
 - ADB
 
+  .markdown-body .rdmd-table {
+  --table-text: black;
+  --table-head: #5b1c9f;
+  --table-head-text: white;
+  --table-stripe: #f0eaf7;
+  --table-edges: rgba(34, 5, 64, 0.5);
+  --table-row: white;
+}
+
 ### 🔀 Voting Classifier (7 Models: RF, XGB, DT, KNN, GDB, LGBM, ADB)
 
 | Metric     | Value |
@@ -72,6 +81,10 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 | Precision  | 0.793 |
 | Recall     | 0.801 |
 | F1 Score   | 0.796 |
+
+### Blending Classifier (Working)
+
+### Stacking Classifier (Working)
 
 ### 🌲 Random Forest Classifier (RFC)
 
