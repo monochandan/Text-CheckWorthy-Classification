@@ -87,40 +87,6 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 
 ### 🌲 Random Forest Classifier (RFC)
 
-<table>
-  <tr>
-    <td align="center">BenchMark Data (Not Checkworthy: 17088, Checkworthy: 5413)</td>
-    <td>
-    | Metric     | Value |
-    |------------|-------|
-    | Accuracy   | 0.825 |
-    | Precision  | 0.858 |
-    | Recall     | 0.825 |
-    | F1 Score   | 0.834 |
-    </td>
-    <td>
-    <td align="center">Resampled(under sampled) Data (Not Checkworthy: 9896, Checkworthy: 1254)</td> 
-    | Metric     | Value |
-    |------------|-------|
-    | Accuracy   | 0.745 |
-    | Precision  | 0.728 |
-    | Recall     | 0.745 |
-    | F1 Score   | 0.734 |
-    </td>
-    <td>
-    <td align="center">Scrapped Tweet data e.g - political and Pandemic related tweet (Not Checkworthy: 172, Checkworthy: 59)</td>
-    | Metric     | Value |
-    |------------|-------|
-    | Accuracy   | 0.841 |
-    | Precision  | 0.838 |
-    | Recall     | 0.841 |
-    | F1 Score   | 0.840 |
-    </td>
-    </td>
-  </tr>
-</table>
-
-
 <table border="1">
   <tr>
     <th>Dataset</th>
