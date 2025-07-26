@@ -116,7 +116,7 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
     <td align="center">0.734</td>
   </tr>
   <tr>
-    <td>Scraped Tweet Data (e.g., Political and Pandemic Tweets)</td>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
     <td align="center">172</td>
     <td align="center">59</td>
     <td align="center">0.841</td>
