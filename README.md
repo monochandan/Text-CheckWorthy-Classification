@@ -121,6 +121,47 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 </table>
 
 
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.825</td>
+    <td align="center">0.858</td>
+    <td align="center">0.825</td>
+    <td align="center">0.834</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">0.745</td>
+    <td align="center">0.728</td>
+    <td align="center">0.745</td>
+    <td align="center">0.734</td>
+  </tr>
+  <tr>
+    <td>Scraped Tweet Data (e.g., Political and Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">0.841</td>
+    <td align="center">0.838</td>
+    <td align="center">0.841</td>
+    <td align="center">0.840</td>
+  </tr>
+</table>
+
+
+
 
 ### 🌳 Decision Tree Classifier (DT)
 
