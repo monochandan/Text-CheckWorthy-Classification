@@ -46,14 +46,13 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 - LGBM
 - ADB
 
-  .markdown-body .rdmd-table {
-  --table-text: black;
-  --table-head: #5b1c9f;
-  --table-head-text: white;
-  --table-stripe: #f0eaf7;
-  --table-edges: rgba(34, 5, 64, 0.5);
-  --table-row: white;
-}
+### BenchMark Dataset from [CLEF2024](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
+<table>
+  <tr>
+    <td><img width="354" height="125" alt="Image" src="https://github.com/user-attachments/assets/1972b9f8-74c5-4f59-b78c-a16da0107f70" /></td>
+      <!--<td><img width="567" height="455" alt="Image" src="https://github.com/user-attachments/assets/36c503fd-e726-456e-89c8-a5269982c679" /></td>-->
+  </tr>
+</table>
 
 ### 🔀 Voting Classifier (7 Models: RF, XGB, DT, KNN, GDB, LGBM, ADB)
 
@@ -88,12 +87,40 @@ While recent benchmarks like CheckThat! Lab at CLEF 2024 have seen dominance fro
 
 ### 🌲 Random Forest Classifier (RFC)
 
-| Metric     | Value |
-|------------|-------|
-| Accuracy   | 0.745 |
-| Precision  | 0.728 |
-| Recall     | 0.745 |
-| F1 Score   | 0.734 |
+<table>
+  <tr>
+    <td>
+    <td align="center">BenchMark Data (Not Checkworthy: 17088, Checkworthy: 5413)</td>
+    | Metric     | Value |
+    |------------|-------|
+    | Accuracy   | 0.825 |
+    | Precision  | 0.858 |
+    | Recall     | 0.825 |
+    | F1 Score   | 0.834 |
+    </td>
+    <td>
+    <td align="center">Resampled(under sampled) Data (Not Checkworthy: 9896, Checkworthy: 1254)</td> 
+    | Metric     | Value |
+    |------------|-------|
+    | Accuracy   | 0.745 |
+    | Precision  | 0.728 |
+    | Recall     | 0.745 |
+    | F1 Score   | 0.734 |
+    </td>
+    <td>
+    <td align="center">Scrapped Tweet data e.g - political and Pandemic related tweet (Not Checkworthy: 172, Checkworthy: 59)</td>
+    | Metric     | Value |
+    |------------|-------|
+    | Accuracy   | 0.841 |
+    | Precision  | 0.838 |
+    | Recall     | 0.841 |
+    | F1 Score   | 0.840 |
+    </td>
+    </td>
+  </tr>
+</table>
+
+
 
 ### 🌳 Decision Tree Classifier (DT)
 
