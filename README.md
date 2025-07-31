@@ -24,6 +24,13 @@ This research addresses the growing need to identify claims worth fact-checking,
   
 <!-- - Using both structured and unstructured data sources, create [retrieval-augmented LLM pipelines](https://github.com/monochandan/RAG-LLM-pipeline) for claim checkworthiness development. which will highlight the value of the RAG system in determining check worthiness. -->
 
+### Custom Ensemble Learning
+Implemented advanced **blending and stacking ensembles** using:
+- Manual out-of-fold training and prediction logic
+- Integration of diverse base models (e.g., XGBoost, Logistic Regression, Decision Tree, Random Forest, Ada Boost, Gradient Boosting, Light GBM, KNN)
+- Final meta-learner trained on base model predictions
+Achieved improved F1 scores compared to traditional ensemble methods (e.g., VotingClassifier).
+
 
 With the rapid rise of online misinformation, it's increasingly important to prioritize which claims are worth fact-checking. Check-worthiness estimation tackles this by classifying whether a statement like a tweet or debate quote-merits verification. However, challenges such as subjectivity, data imbalance, and linguistic ambiguity make this task difficult.
 
