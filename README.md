@@ -41,8 +41,9 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 - gemini-1.5-flash - prompt engineering for class label automation.
 - falcon-7b - data pruning by using prompt engineering.
 - BERT - LLM model for text classification.
-- phi-2 - LLM model for text classification.
-- mistral-7b -  LLM model for text classification. (working)
+- multilingual BERT
+- xlm-RoBERTa
+<!--- mistral-7b -  LLM model for text classification. (working)-->
 
 ## Classical model used till now (Hyperparameter Tuned):
 - Random Forest
