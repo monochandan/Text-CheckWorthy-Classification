@@ -45,7 +45,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 - xlm-RoBERTa
 <!--- mistral-7b -  LLM model for text classification. (working)-->
 
-## Classical model used till now Hyperparameter Tuned for [English](https://github.com/monochandan/Text-CheckWorthy-Classification-Master-Thesis/blob/main/hp-tuning/hp-tuning.ipynb), [Arabic]()
+## Classical model used till now Hyperparameter Tuned for [English](https://github.com/monochandan/Text-CheckWorthy-Classification-Master-Thesis/blob/main/hp-tuning/hp-tuning.ipynb), [Arabic](https://github.com/monochandan/Text-CheckWorthy-Classification-Master-Thesis/blob/main/hp-tuning/arabic_hp_tuning.ipynb) and [Spanish]()
 - Random Forest
 - XGB
 - Decision Tree
