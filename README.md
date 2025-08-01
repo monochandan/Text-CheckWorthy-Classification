@@ -62,6 +62,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   </tr>
 </table>
 
+## English
+
 ### 1. Voting Classifier (4 Models: 'dt', 'knn', 'rf', 'xgb')
 
 
@@ -402,7 +404,48 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   </tr>
 </table>
 
-### Blending Classifier (Working)
+### Blending Classifier ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb')
+
+<table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not Checkworthy</th>
+    <th>Checkworthy</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <td>Benchmark Data</td>
+    <td align="center">17088</td>
+    <td align="center">5413</td>
+    <td align="center">0.956</td>
+    <td align="center">0.956</td>
+    <td align="center">0.956</td>
+    <td align="center">0.955</td>
+  </tr>
+  <tr>
+    <td>Resampled (Under-sampled) Data</td>
+    <td align="center">9896</td>
+    <td align="center">1254</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+  <tr>
+    <td>Tweet Data (e.g., Recent Political and Covid Pandemic Tweets)</td>
+    <td align="center">172</td>
+    <td align="center">59</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+    <td align="center">-</td>
+  </tr>
+</table>
+
+
 
 ### Stacking Classifier (Working)
 
