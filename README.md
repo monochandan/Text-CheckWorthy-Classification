@@ -40,7 +40,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 ## Used LLM models till now:
 - gemini-1.5-flash - prompt engineering for class label automation.
 - falcon-7b - data pruning by using prompt engineering.
-- BERT - LLM model for text classification.
+- [BERT](https://github.com/monochandan/Text-CheckWorthy-Classification-Master-Thesis/blob/main/LLM/PEFT-BERT-QLoRa--got-result_1.ipynb) - LLM model for text classification.
 - multilingual BERT
 - xlm-RoBERTa
 <!--- mistral-7b -  LLM model for text classification. (working)-->
