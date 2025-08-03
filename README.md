@@ -856,19 +856,19 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 </tr>
 <tr>
   <td>Training Data</td>
-  <td allign = "center">5090</td>
-  <td align = "center">2243</td>
+  <td align="center">5090</td>
+  <td align="center">2243</td>
 </tr> 
 <tr>
   <td>Dev Data (hyperparametr Tuning)</td>
-  <td align = "center">682</td>
-  <tdn align = "center"> 411 </td>
+  <td align="center">682</td>
+  <tdn align="center"> 411 </td>
 </tr>
 
 <tr>
   <td>Dev Test Data (Test the model)</td>
-  <td align = "center">377</td>
-  <tdn align = "center"> 123 </td>
+  <td align="center">377</td>
+  <tdn align="center"> 123 </td>
 </tr>
 </table>
 
