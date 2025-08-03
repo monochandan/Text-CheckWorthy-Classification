@@ -846,6 +846,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 | Recall     | 0.9370       |
 
 
+<!-- ############################################################################################################################--->
+
 # Arabic Data
 
 ## [Data Used](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
@@ -881,6 +883,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>Precision</th>
     <th>Recall</th>
     <th>F1 Score</th>
+    <th>Confusion Matrix</th>
   </tr>
   <tr>
     <th>Decision Tree Classifier</th>
@@ -888,6 +891,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.912</th>
     <th>0.911</th>
     <th>0.911</th>
+    <th><img width="296" height="264" alt="Image" src="https://github.com/user-attachments/assets/c8de8650-6ba9-4f79-8271-80ec120ddcfe" /></th>
   </tr>
   <tr>
     <th>KNN Classifier</th>
@@ -1020,18 +1024,205 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   </tr>
 </table>
 
+<!-- ############################################################################################################################--->
+# Spanish Data
+
+## [Data Used](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
+<table border="1">
+<tr>
+  <th>Dataset</th>
+  <th>Not CheckWorthy</th>
+  <th>Checkworthy</th>
+</tr>
+<tr>
+  <td>Training Data</td>
+  <td align="center">16862</td>
+  <td align="center">3182</td>
+</tr> 
+<tr>
+  <td>Dev Data (hyperparametr Tuning)</td>
+  <td align="center">4296</td>
+  <td align="center"> 704</td>
+</tr>
+
+<tr>
+  <td>Dev Test Data (Model Test)</td>
+  <td align="center">4491</td>
+  <td align="center"> 509</td>
+</tr>
+</table>
+
+## Result
+<table border="1">
+  <tr>
+    <th>Models</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <th>Decision Tree Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>0.911</th>
+  </tr>
+  <tr>
+    <th>KNN Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  
+   <tr>
+    <th>XGB Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Random Forest Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Gradient Boosting Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+   <tr>
+    <th>Light GBM Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Ada Boost Classifier</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Logistic Regression</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb')</th>
+   <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('gdb', 'lgbm', 'adb')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'adb')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
 
 
-### Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('xgb', 'lgbm', 'adb', 'lr')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf')</th>
+   <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+  
+  <tr>
+    <th>Blending Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb'), Meta Model : ('lr')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+
+  <tr>
+    <th>Stacking Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'gdb', 'lgbm', 'adb'), Meta Model : ('lr')</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+    <th>-</th>
+  </tr>
+</table>
+
+
+# MultiLingual Data (Arabic, Spanish, English)
+## MultiLingual BERT (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
 
 ### Evaluation Dataset Scores
 
 | Metric     | Value        |
 |------------|--------------|
-| Accuracy   | 0.9176       |
-| F1 Score   | 0.8399       |
-| Precision  | 0.7611       |
-| Recall     | 0.9370       |
+| Accuracy   | -            |
+| F1 Score   | -            |
+| Precision  |-             |
+| Recall     | -            |
+
+## XLM RoBERTa (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
+
+### Evaluation Dataset Scores
+
+| Metric     | Value        |
+|------------|--------------|
+| Accuracy   | -            |
+| F1 Score   | -            |
+| Precision  |-             |
+| Recall     | -            |
+
 
 ## This result has already surpassed the best scores from CLEF 2024, as seen [here](https://checkthat.gitlab.io/clef2024/task1/).
 
