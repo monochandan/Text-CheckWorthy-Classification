@@ -891,7 +891,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.912</th>
     <th>0.911</th>
     <th>0.911</th>
-    <th><img width="296" height="264" alt="Image" src="https://github.com/user-attachments/assets/c8de8650-6ba9-4f79-8271-80ec120ddcfe" /></th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/c8de8650-6ba9-4f79-8271-80ec120ddcfe" /></th>
   </tr>
   <tr>
     <th>KNN Classifier</th>
