@@ -862,7 +862,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 <tr>
   <td>Dev Data (hyperparametr Tuning)</td>
   <td align="center">682</td>
-  <tdn align="center"> 411 </td>
+  <td align="center"> 411 </td>
 </tr>
 
 <tr>
