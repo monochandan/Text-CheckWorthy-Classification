@@ -899,6 +899,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>1.00</th>
     <th>1.00</th>
     <th>1.00</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/c8506364-b6ae-4faa-9e15-e05db83e5af9" /></th>
   </tr>
 
   
@@ -908,6 +909,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.945</th>
     <th>0.936</th>
     <th>0.937</th>
+     <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/c8202113-44b9-45e0-9dc8-8f5b872f7587" /></th>
   </tr>
 
   <tr>
@@ -916,6 +918,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.389</th>
     <th>0.624</th>
     <th>0.479</th>
+    <th><img width="297" height="264" alt="Image" src="https://github.com/user-attachments/assets/b995591c-323e-4814-9a6f-38b0e2c968cc" /></th>
   </tr>
 
   <tr>
@@ -924,6 +927,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.995</th>
     <th>0.995</th>
     <th>0.995</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/d5f2155d-b4b2-4213-bbf2-8d92611873e5" /></th>
   </tr>
 
    <tr>
@@ -932,6 +936,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.993</th>
     <th>0.993</th>
     <th>0.993</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/f84bed07-b914-4796-9179-42a3733333d8" /></th>
   </tr>
 
   <tr>
@@ -940,6 +945,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.775</th>
     <th>0.743</th>
     <th>0.710</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/e60d7817-1c04-4466-b1c7-48a7683f9932" /></th>
   </tr>
 
   <tr>
@@ -948,6 +954,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.141</th>
     <th>0.376</th>
     <th>0.206</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/bddf9b3d-b294-4ca7-9620-6e7488f9a8e9" /></th>
   </tr>
 
   <tr>
@@ -956,6 +963,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.980</th>
     <th>0.979</th>
     <th>0.979</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/e00ff91a-519b-44a2-ba41-0e5144b9f315" /></th>
   </tr>
 
   <tr>
@@ -964,6 +972,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.997</th>
     <th>0.997</th>
     <th>0.997</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/33bd3679-a030-4ac0-afc9-ff66008016ff" /></th>
   </tr>
 
   <tr>
@@ -972,6 +981,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.998</th>
     <th>0.998</th>
     <th>0.998</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/4d301094-48b6-450b-9a20-cbbd54dc3cd7" /></th>
   </tr>
 
   <tr>
@@ -980,6 +990,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.981</th>
     <th>0.981</th>
     <th>0.981</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/bd23d42d-abaa-4ad0-905f-7f966b3d27c8" /></th>
   </tr>
 
 
@@ -989,6 +1000,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.912</th>
     <th>0.911</th>
     <th>0.911</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/c7a01ac9-c1e1-4477-9b55-a620308a47ba" />
+</th>
   </tr>
 
   <tr>
@@ -997,6 +1010,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.997</th>
     <th>0.997</th>
     <th>0.997</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/1e14fe8b-24df-423a-a6f7-f336a81c9a7a" />
+</th>
   </tr>
 
   <tr>
@@ -1005,6 +1020,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.999</th>
     <th>0.999</th>
     <th>0.999</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/05bdad50-43dc-45ce-9fd6-5d0029f3ae69" /></th>
   </tr>
   
   <tr>
@@ -1013,6 +1029,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.389</th>
     <th>0.624</th>
     <th>0.479</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/b998c597-8e73-4a4b-822f-a12e4819f6b6" /></th>
   </tr>
 
   <tr>
@@ -1021,6 +1038,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>-</th>
     <th>-</th>
     <th>-</th>
+    <th></th>
   </tr>
 </table>
 
