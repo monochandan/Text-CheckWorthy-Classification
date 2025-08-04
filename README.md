@@ -62,9 +62,32 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   </tr>
 </table>
 
-## English
+# English
+## [Data Used](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
 
-### 1. Voting Classifier (4 Models: 'dt', 'knn', 'rf', 'xgb')
+## DataSet
+<Table border="1">
+  <tr>
+    <th>Dataset</th>
+    <th>Not CheckWorthy</th>
+    <th>CheckWorthy</th>
+  </tr>
+  <td>Training Data</td>
+  <td align="center">17087</td>
+  <td align="center">5413</td>
+</tr> 
+<tr>
+  <td>Dev Data (hyperparametr Tuning)</td>
+  <td align="center">794</td>
+  <td align="center"> 238</td>
+</tr>
+
+<tr>
+  <td>Dev Test Data (Model Test)</td>
+  <td align="center">210</td>
+  <td align="center"> 108</td>
+</tr>
+</Table>
 
 
 
@@ -78,6 +101,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>Recall</th>
     <th>F1 Score</th>
   </tr>
+  <tr>
+  
   <tr>
     <td>Benchmark Data</td>
     <td align="center">17088</td>
