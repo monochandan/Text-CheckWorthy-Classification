@@ -201,39 +201,43 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('gdb', 'lgbm', 'adb')</th>
-    <th>0.998</th>
-    <th>0.998</th>
-    <th>0.998</th>
-    <th>0.998</th>
-    <th></th>
+    <th>0.946</th>
+    <th>0.947</th>
+    <th>0.946</th>
+    <th>0.945</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/ca5d5eea-840c-4145-8090-53de441ca2d8" />
+</th>
   </tr>
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'adb')</th>
-    <th>0.981</th>
-    <th>0.981</th>
-    <th>0.981</th>
-    <th>0.981</th>
-    <th></th>
+    <th>0.934</th>
+    <th>0.936</th>
+    <th>0.934</th>
+    <th>0.931</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/02658698-a545-4f42-861f-345fdaf9a6d9" />
+</th>
   </tr>
 
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt')</th>
-    <th>0.911</th>
-    <th>0.912</th>
-    <th>0.911</th>
-    <th>0.911</th>
-    <th></th>
+    <th>0.953</th>
+    <th>0.953</th>
+    <th>0.953</th>
+    <th>0.953</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/4458f702-f505-4f45-9ad3-5dee2a002be9" />
+</th>
   </tr>
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('xgb', 'lgbm', 'adb', 'lr')</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th></th>
+    <th>0.957</th>
+    <th>0.957</th>
+    <th>0.957</th>
+    <th>0.957</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/f2965f37-4d3e-43ff-868a-4d55c321467d" />
+</th>
   </tr>
 
   <tr>
