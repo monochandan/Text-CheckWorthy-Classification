@@ -146,56 +146,57 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
   <tr>
     <th>Gradient Boosting Classifier</th>
-    <th>0.995</th>
-    <th>0.995</th>
-    <th>0.995</th>
-    <th>0.995</th>
-    <th></th>
+    <th>0.942</th>
+    <th>0.942</th>
+    <th>0.942</th>
+    <th>0.940</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/6de40c39-6351-465c-b311-5a8b6c8aaf85" /></th>
   </tr>
 
    <tr>
     <th>Light GBM Classifier</th>
-    <th>0.993</th>
-    <th>0.993</th>
-    <th>0.993</th>
-    <th>0.993</th>
-    <th></th>
+    <th>0.942</th>
+    <th>0.943</th>
+    <th>0.942</th>
+    <th>0.941</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/73e97d0d-efef-4d30-99ef-0ab554e4fcc6" /></th>
   </tr>
 
   <tr>
     <th>Ada Boost Classifier</th>
-    <th>0.743</th>
-    <th>0.775</th>
-    <th>0.743</th>
-    <th>0.710</th>
-    <th></th>
+    <th>0.908</th>
+    <th>0.915</th>
+    <th>0.908</th>
+    <th>0.901</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/386a8631-a420-43a7-a86f-08385e62e1d2" /></th>
   </tr>
 
   <tr>
     <th>Logistic Regression</th>
-    <th>0.376</th>
-    <th>0.141</th>
-    <th>0.376</th>
-    <th>0.206</th>
-    <th></th>
+    <th>0.891</th>
+    <th>0.915</th>
+    <th>0.891</th>
+    <th>0.896</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/0b3b3acd-a115-477e-8a89-3617be74d8ad" /></th>
   </tr>
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb')</th>
-    <th>0.979</th>
-    <th>0.980</th>
-    <th>0.979</th>
-    <th>0.979</th>
-    <th></th>
+    <th>0.934</th>
+    <th>0.934</th>
+    <th>0.934</th>
+    <th>0.931</th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/545293c9-99ae-4a0d-b262-27d4d02f7b4c" /></th>
   </tr>
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb')</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th></th>
+    <th>0.943</th>
+    <th>0.944</th>
+    <th>0.943</th>
+    <th>0.942</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/c71c97ac-314f-4225-9317-01cfe900f10a" />
+</th>
   </tr>
 
   <tr>
