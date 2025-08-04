@@ -918,7 +918,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.389</th>
     <th>0.624</th>
     <th>0.479</th>
-    <th><img width="297" height="264" alt="Image" src="https://github.com/user-attachments/assets/b995591c-323e-4814-9a6f-38b0e2c968cc" /></th>
+    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/b995591c-323e-4814-9a6f-38b0e2c968cc" /></th>
   </tr>
 
   <tr>
