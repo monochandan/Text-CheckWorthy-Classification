@@ -242,20 +242,22 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
   <tr>
     <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf')</th>
-    <th>0.999</th>
-    <th>0.999</th>
-    <th>0.999</th>
-    <th>0.999</th>
-    <th></th>
+    <th>0.955</th>
+    <th>0.955</th>
+    <th>0.955</th>
+    <th>0.954</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/fed1c6c2-bace-45d0-8a24-4a7b7693f921" />
+</th>
   </tr>
   
   <tr>
     <th>Blending Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb'), Meta Model : ('lr')</th>
-    <th>0.624</th>
-    <th>0.389</th>
-    <th>0.624</th>
-    <th>0.479</th>
-    <th></th>
+    <th>0.952</th>
+    <th>0.952</th>
+    <th>0.952</th>
+    <th>0.951</th>
+    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/7ecc3b04-fac6-4851-82af-2c8c24c81574" />
+</th>
   </tr>
 
   <tr>
