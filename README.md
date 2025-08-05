@@ -39,7 +39,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
 ## Used LLM models till now:
 - gemini-1.5-flash - prompt engineering for class label automation.
-- falcon-7b - data pruning by using prompt engineering.
+<!-- falcon-7b - data pruning by using prompt engineering.-->
 - [BERT](https://github.com/monochandan/Text-CheckWorthy-Classification-Master-Thesis/blob/main/LLM/PEFT-BERT-QLoRa--got-result_1.ipynb) - LLM model for text classification.
 - multilingual BERT
 - xlm-RoBERTa
@@ -91,13 +91,18 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   <td align="center"> 88</td>
 </tr>
 <tr>
+  <td>UnderSampled Test Data (Model Test)</td>
+  <td align="center">7189</td>
+  <td align="center"> 5408</td>
+</tr>
+<tr>
   <td>Tweet Data (Model Test)</td>
   <td align="center">179</td>
   <td align="center">55</td>
 </tr>
 </Table>
 
-## Result
+## Result for Benchmark DataSet
 <table border="1">
   <tr>
     <th>Models</th>
@@ -276,7 +281,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
 ### Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
 
-### Evaluation Dataset Scores
+### Evaluation Dataset Scores (Undersampled)
 
 | Metric     | Value        |
 |------------|--------------|
