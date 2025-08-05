@@ -282,7 +282,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
 ### Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
 
-### Evaluation Dataset Scores (Undersampled)
+### Evaluation Dataset Scores (Trained on Undersampled Data)
 
 | Metric     | Value        |
 |------------|--------------|
@@ -291,6 +291,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 | Precision  | 0.7611       |
 | Recall     | 0.9370       |
 
+## Result for Tweet DataSet
 
 <!-- ############################################################################################################################--->
 
