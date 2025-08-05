@@ -74,6 +74,11 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   <td align="center">17087</td>
   <td align="center">5413</td>
 </tr> 
+  <tr>
+  <td>UnderSampled Training Data</td>
+  <td align="center">7189</td>
+  <td align="center"> 5408</td>
+</tr>
 <tr>
   <td>Dev Data (hyperparametr Tuning)</td>
   <td align="center">794</td>
@@ -90,11 +95,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   <td align="center">253</td>
   <td align="center"> 88</td>
 </tr>
-<tr>
-  <td>UnderSampled Test Data (Model Test)</td>
-  <td align="center">7189</td>
-  <td align="center"> 5408</td>
-</tr>
+
 <tr>
   <td>Tweet Data (Model Test)</td>
   <td align="center">179</td>
