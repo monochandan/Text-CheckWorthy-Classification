@@ -296,7 +296,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
 <!-- ############################################################################################################################--->
 
-# Arabic Data
+# Arabic
 
 ## [Data Used](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
 <table border="1">
@@ -491,7 +491,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 </table>
 
 <!-- ############################################################################################################################--->
-# Spanish Data
+# Spanish
 
 ## [Data Used](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
 <table border="1">
@@ -508,13 +508,13 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 <tr>
   <td>Dev Data (hyperparametr Tuning)</td>
   <td align="center">4296</td>
-  <td align="center"> 704</td>
+  <td align="center">704</td>
 </tr>
 
 <tr>
   <td>Dev Test Data (Model Test)</td>
   <td align="center">4491</td>
-  <td align="center"> 509</td>
+  <td align="center">509</td>
 </tr>
 </table>
 
