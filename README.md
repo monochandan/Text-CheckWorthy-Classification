@@ -316,6 +316,40 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   
 </table>
 
+### Scores : Training on undersampled Dataset
+
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <th>Test Data</th>
+    <th>0.</th>
+    <th>0.</th>
+    <th>0.</th>
+    <th>0.</th>
+  </tr>
+  <tr>
+    <th>Dev Test Data</th>
+    <th>0.</th>
+    <th>0.</th>
+    <th>0.0.</th>
+    <th>0.</th>
+  </tr>
+   <tr>
+    <th>Tweet Test Data</th>
+    <th>0.</th>
+    <th>0.</th>
+    <th>0.</th>
+    <th>0.</th>
+  </tr>
+  
+</table>
+
 ## Result On UnderSampled Data
 --------- ***** ---------
 
