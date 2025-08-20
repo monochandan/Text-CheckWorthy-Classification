@@ -280,9 +280,9 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
 
 
-### Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder), Hyperparametere tuned with optuna for TrainingArgument
+# Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder), Hyperparametere tuned with optuna for TrainingArgument
 
-### Scores : Training on original Dataset
+## Scores : Training on original Dataset
 
 <table>
   <tr>
@@ -346,6 +346,40 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>0.</th>
     <th>0.</th>
     <th>0.</th>
+  </tr>
+  
+</table>
+
+# DEBERTA-V3-LARGE (English Data Set)
+## Score
+<table>
+  <tr>
+    <th>Dataset</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1</th>
+  </tr>
+  <tr>
+    <th>Test Data</th>
+    <th>0.83</th>
+    <th>0.83</th>
+    <th>0.83</th>
+    <th>0.81</th>
+  </tr>
+  <tr>
+    <th>Dev Test Data</th>
+    <th>0.85</th>
+    <th>0.86</th>
+    <th>0.0.85</th>
+    <th>0.84</th>
+  </tr>
+   <tr>
+    <th>Tweet Test Data</th>
+    <th>0.77</th>
+    <th>0.78</th>
+    <th>0.77</th>
+    <th>0.77</th>
   </tr>
   
 </table>
