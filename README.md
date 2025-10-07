@@ -390,6 +390,39 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 
 ## Result for Tweet DataSet
 ---------- **** ---------
+<!-- ###########################################################################################################################--->
+# Dutch
+
+## [Data Used](https://gitlab.com/checkthat_lab/clef2024-checkthat-lab/-/tree/main/task1/data)
+<table border="1">
+<tr>
+  <th>Dataset</th>
+  <th>CheckWorthy</th>
+  <th> Not Checkworthy</th>
+</tr>
+<tr>
+  <td>Training Data</td>
+  <td align="center">405</td>
+  <td align="center">590</td>
+</tr> 
+<tr>
+  <td>Dev Data (hyperparametr Tuning)</td>
+  <td align="center">102</td>
+  <td align="center"> 150 </td>
+</tr>
+
+<tr>
+  <td>Dev Test Data (Model Test)</td>
+  <td align="center">316</td>
+  <td align="center"> 350 </td>
+</tr>
+
+<tr>
+  <td>Test Data (Model Test)</td>
+  <td align="center">397</td>
+  <td align="center">603</td>
+</tr>
+</table>
 
 <!-- ############################################################################################################################--->
 
@@ -790,7 +823,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 </table>
 
 
-# MultiLingual Data (Arabic, Spanish, English)
+# MultiLingual Data (Arabic, Spanish, English, Dutch)
 ## MultiLingual BERT (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
 
 ### Evaluation Dataset Scores
