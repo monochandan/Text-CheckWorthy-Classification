@@ -173,8 +173,292 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   
 </table>
 
+## Performance of classicial ML models on Undersampled English Dataset and tested on dev test dataset
 
+<table border = "1">
+ <tr>
+   <th>Model</th>
+   <th>Accuracy</th>
+   <th>Precision</th>
+   <th>Recall</th>
+   <th>F1</th>
+ </tr> 
+  
+  <tr>
+   <th>Decision Tree</th>
+   <th>0.709</th>
+   <th>0.714</th>
+   <th>0.709</th>
+   <th>0.711</th>
+  </tr> 
+  
+  <tr>
+      <th>KNN</th>
+   <th>0.671</th>
+   <th>0.657</th>
+   <th>0.671</th>
+   <th>0.660</th>
+  </tr> 
+  
+  <tr>
+      <th>XGBoost</th>
+   <th>0.867</th>
+   <th>0.872</th>
+   <th>0.867</th>
+   <th>0.868</th>
+  </tr> 
+  
+  <tr>
+      <th>Random Forest</th>
+   <th>0.728</th>
+   <th>0.717</th>
+   <th>0.728</th>
+   <th>0.714</th>
+  </tr> 
+  
+  <tr>
+      <th>Gradient Boosting</th>
+   <th>0.861</th>
+   <th>0.860</th>
+   <th>0.861</th>
+   <th>0.857</th>
+  </tr> 
+  
+  <tr>
+      <th>Light GBM</th>
+   <th>0.845</th>
+   <th>0.843</th>
+   <th>0.845</th>
+   <th>0.842</th>
+  </tr> 
+  
+  <tr>
+      <th>Ada Boost</th>
+   <th>0.813</th>
+   <th>0.815</th>
+   <th>0.813</th>
+   <th>0.803</th>
+  </tr> 
+  
+  <tr>
+      <th>Logistic Regression</th>
+   <th>0.851</th>
+   <th>0.874</th>
+   <th>0.851</th>
+   <th>0.855</th>
+  </tr> 
+  
+  <tr>
+      <th>Voating Classifier (Soft: XGb + GDB + LR)</th>
+   <th>0.884</th>
+   <th>0.889</th>
+   <th>0.883</th>
+   <th>0.884</th>
+  </tr> 
+  
+  <tr>
+      <th>Voating Classifier (Hard: XGb + LGBM + ADb  + LR)</th>
+   <th>0.864</th>
+   <th>0.863</th>
+   <th>0.864</th>
+   <th>0.862</th>
+  </tr> 
+  
+  <tr>
+      <th>Voating Classifier (Hard: XGb + GDB + LR)</th>
+   <th>0.877</th>
+   <th>0.881</th>
+   <th>0.877</th>
+   <th>0.878</th>
+  </tr> 
+</table>
 
+## Performance of different models on the original dataset and evaluated on dev test data
+
+<table border = "1">
+ <tr>
+   <th>Model</th>
+   <th>Accuracy</th>
+   <th>Precision</th>
+   <th>Recall</th>
+   <th>F1</th>
+ </tr> 
+  
+  <tr>
+   <th>Decision Tree</th>
+   <th>0.718</th>
+   <th>0.720</th>
+   <th>0.718</th>
+   <th>0.719</th>
+  </tr> 
+  
+  <tr>
+      <th>KNN</th>
+   <th>0.687</th>
+   <th>0.685</th>
+   <th>0.687</th>
+   <th>0.615</th>
+  </tr> 
+  
+  <tr>
+      <th>XGBoost</th>
+   <th>0.791</th>
+   <th>0.824</th>
+   <th>0.791</th>
+   <th>0.764</th>
+  </tr> 
+  
+  <tr>
+      <th>Random Forest</th>
+   <th>0.753</th>
+   <th>0.746</th>
+   <th>0.753</th>
+   <th>0.746</th>
+  </tr> 
+  
+  <tr>
+      <th>Gradient Boosting</th>
+   <th>0.801</th>
+   <th>0.831</th>
+   <th>0.801</th>
+   <th>0.777</th>
+  </tr> 
+  
+  <tr>
+      <th>Light GBM</th>
+   <th>0.807</th>
+   <th>0.828</th>
+   <th>0.807</th>
+   <th>0.788</th>
+  </tr> 
+  
+  <tr>
+      <th>Ada Boost</th>
+   <th>0.785</th>
+   <th>0.814</th>
+   <th>0.785</th>
+   <th>0.757</th>
+  </tr> 
+  
+  <tr>
+      <th>Logistic Regression</th>
+   <th>0.851</th>
+   <th>0.857</th>
+   <th>0.851</th>
+   <th>0.844</th>
+  </tr> 
+  
+  <tr>
+      <th>Voating Classifier (Soft: XGb + GDB + LR)</th>
+   <th>0.813</th>
+   <th>0.840</th>
+   <th>0.813</th>
+   <th>0.793</th>
+  </tr> 
+</table>
+
+## Performance of different classifiers on the undersampled dataset (evaluated on test data):
+
+<table border = "1">
+ <tr>
+   <th>Model</th>
+   <th>Accuracy</th>
+   <th>Precision</th>
+   <th>Recall</th>
+   <th>F1</th>
+ </tr> 
+  
+  <tr>
+   <th>KNN</th>
+   <th>0.669</th>
+   <th>0.641</th>
+   <th>0.669</th>
+   <th>0.653</th>
+  </tr> 
+  
+  <tr>
+      <th>XGBoost</th>
+   <th>0.718</th>
+   <th>0.785</th>
+   <th>0.718</th>
+   <th>0.735</th>
+  </tr> 
+  
+  <tr>
+      <th>Gradient Boosting</th>
+   <th>0.780</th>
+   <th>0.790</th>
+   <th>0.780</th>
+   <th>0.784</th>
+  </tr> 
+  
+  <tr>
+      <th>Light GBM</th>
+   <th>0.812</th>
+   <th>0.812</th>
+   <th>0.812</th>
+   <th>0.812</th>
+  </tr> 
+  
+  <tr>
+      <th>Ada Boost</th>
+   <th>0.7333</th>
+   <th>0.701</th>
+   <th>0.733</th>
+   <th>0.709</th>
+  </tr> 
+  
+  <tr>
+      <th>Logistic Regression</th>
+   <th>0.724</th>
+   <th>0.814</th>
+   <th>0.724</th>
+   <th>0.741</th>
+  </tr> 
+  
+  <tr>
+      <th>Voating Classifier (Soft: XGB + GDB + LR)</th>
+   <th>0.777</th>
+   <th>0.818</th>
+   <th>0.777</th>
+   <th>0.788</th>
+  </tr> 
+  
+  
+  
+  <tr>
+      <th>Voating Classifier (Hard: XGb +  LGBM + ADB + LR)</th>
+   <th>0.806</th>
+   <th>0.808</th>
+   <th>0.806</th>
+   <th>0.807</th>
+  </tr> 
+</table>
+
+## Performance of classifier trained on undersampled dataset , evaluated on tweet data
+
+### Query for tweet data scrapping:
+``QUERY = "COVID OR vaccine OR pandemic OR lockdown OR #COVID19 OR " \
+        "#VaccineMandate elections OR Biden OR Trump OR Joe Biden OR " \
+        "DOGE OR FBI OR Donald Trump OR Ukraine OR Russia OR " \
+        "Middle East Crisis OR South Asia Crisis OR UN meeting OR" \
+        " US Congress OR US Republic OR geopolitics OR War OR" \
+        " #Politics OR #Election2025  OR #UkraineRussiaWar OR" \
+        " #Trump OR #DOGE OR #Trump2025 #MiddleEastCrisis OR" \
+        " #Geopolitics OR #USRepublic OR #USCongress OR #Bangladesh (COVID OR" \
+        " OR OR vaccine OR OR OR pandemic OR OR OR lockdown OR OR OR" \
+        " #COVID19 OR OR OR #VaccineMandate OR elections OR OR OR" \
+        " Biden OR OR OR Trump OR OR OR Joe OR Biden OR OR OR" \
+        " DOGE OR OR OR FBI OR OR OR Donald OR Trump OR OR OR" \
+        " Ukraine OR OR OR Russia OR OR OR Middle OR " \
+        "East OR Crisis OR OR OR South OR Asia OR Crisis OR OR OR" \
+        " UN OR meeting OR OR OR US OR Congress OR OR OR US OR" \
+        " Republic OR OR OR geopolitics OR OR OR War OR OR OR" \
+        " #Politics OR OR OR #Election2025 OR OR OR #UkraineRussiaWar OR OR OR" \
+        " #Trump OR OR OR #DOGE OR OR OR #Trump2025 OR #MiddleEastCrisis OR OR OR" \
+        " #Geopolitics OR OR OR #USRepublic OR OR OR #USCongress OR OR OR #Bangladesh)" \
+        " lang:en until:2022-12-31 since:2020-01-01"
+        ``
 
 
 # Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder), Hyperparametere tuned with optuna for TrainingArgument
