@@ -459,117 +459,169 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
         " #Geopolitics OR OR OR #USRepublic OR OR OR #USCongress OR OR OR #Bangladesh)" \
         " lang:en until:2022-12-31 since:2020-01-01"
         ``
-
-
-# Parameter Efficient Fine Tuning (PEFT) QLoRA, Model: Microsoft BERT (Encoder), Hyperparametere tuned with optuna for TrainingArgument
-
-## Scores : Training on original Dataset
-
-<table>
+<table border = "1">
+ <tr>
+   <th>Model</th>
+   <th>Accuracy</th>
+   <th>Precision</th>
+   <th>Recall</th>
+   <th>F1</th>
+ </tr> 
+  
   <tr>
-    <th>Dataset</th>
-    <th>Accuracy</th>
-    <th>Precision</th>
-    <th>Recall</th>
-    <th>F1</th>
-  </tr>
+   <th>Decision Tree</th>
+   <th>0.641</th>
+   <th>0.698</th>
+   <th>0.641</th>
+   <th>0.625</th>
+  </tr> 
+  
   <tr>
-    <th>Test Data</th>
-    <th>0.8387</th>
-    <th>0.8342</th>
-    <th>0.8387</th>
-    <th>0.8250</th>
-  </tr>
+      <th>XGBoost</th>
+   <th>0.623</th>
+   <th>0.659</th>
+   <th>0.623</th>
+   <th>0.613</th>
+  </tr> 
+  
   <tr>
-    <th>Dev Test Data</th>
-    <th>0.8037</th>
-    <th>0.803</th>
-    <th>0.0.7859</th>
-    <th>0.8187</th>
+      <th>Gradient Boosting</th>
+   <th>0.654</th>
+   <th>0.653</th>
+   <th>0.654</th>
+   <th>0.653</th>
+  </tr> 
+  
+  <tr>
+      <th>Light GBM</th>
+   <th>0.649</th>
+   <th>0.648</th>
+   <th>0.649</th>
+   <th>0.648</th>
+  </tr> 
+  
+  <tr>
+      <th>Ada Boost</th>
+   <th>0.632</th>
+   <th>0.639</th>
+   <th>0.632</th>
+   <th>0.616</th>
+  </tr> 
+  
+  <tr>
+      <th>Logistic Regression</th>
+   <th>0.688</th>
+   <th>0.740</th>
+   <th>0.688</th>
+   <th>0.678</th>
+  </tr> 
+  
+  <tr>
+      <th>Voating Classifier (Soft: XGB + GDB + LR)</th>
+   <th>0.658</th>
+   <th>0.675</th>
+   <th>0.658</th>
+   <th>0.656</th>
+  </tr> 
+  
+  
+  
+  <tr>
+      <th>Voating Classifier (Hard: XGb +  LGBM + ADB + LR)</th>
+   <th>0.671</th>
+   <th>0.670</th>
+   <th>0.671</th>
+   <th>0.670</th>
+  </tr> 
+</table>
+        
+
+
+## Performance of LLMs for english dataset across different evaluation datasets:
+<table border = "1">
+ <tr>
+   <th>Model</th>
+   <th>Dataset</th>
+   <th>Accuracy</th>
+   <th>Precision</th>
+   <th>F1</th>
+ </tr> 
+  
+  <tr>
+   <th>DBERTa (epoch : 8)</th>
+   <th>Test Data</th>
+   <th>0.836</th>
+   <th>0.834</th>
+   <th>0.819</th>
+  </tr> 
+  
+  <tr>
+   <th>DBERTa (epoch : 8)</th>
+   <th>Dev Test Data</th>
+   <th>0.851</th>
+   <th>0.861</th>
+   <th>0.843</th>
   </tr>
+
+  <tr>
+   <th>DBERTa (epoch : 8)</th>
+   <th>Tweet Data</th>
+   <th>0.779</th>
+   <th>0.788</th>
+   <th>0.775</th>
+  </tr>
+  
+  <tr>
+      <th>BERT (QLoRA, Undersampled, Hyperparametered tuned with optuna, 40 epoch)</th>
+   <th>Test Data</th>
+   <th>0.839</th>
+   <th>0.834</th>
+   <th>0.825</th>
+  </tr> 
+
+  <tr>
+      <th>BERT (QLoRA, Undersampled, Hyperparametered tuned with optuna, 40 epoch)</th>
+   <th>Dev Test Data</th>
+   <th>0.804</th>
+   <th>0.819</th>
+   <th>0.8786</th>
+  </tr> 
+
+  <tr>
+      <th>BERT (QLoRA, Undersampled, Hyperparametered tuned with optuna, 40 epoch)</th>
+   <th>Tweet Data</th>
+   <th>0.745</th>
+   <th>0.750</th>
+   <th>0.741</th>
+  </tr> 
+  
+  <tr>
+      <th>RoBERTa - Base (25 epochs)</th>
+   <th>Test Data</th>
+   <th>0.821</th>
+   <th>0.818</th>
+   <th>0.819</th>
+  </tr> 
+
    <tr>
-    <th>Tweet Test Data</th>
-    <th>0.74</th>
-    <th>0.74</th>
-    <th>0.74</th>
-    <th>0.74</th>
-  </tr>
+      <th>RoBERTa - Base (25 epochs)</th>
+   <th>Dev Test Data</th>
+   <th>0.848</th>
+   <th>0.847</th>
+   <th>0.847</th>
+  </tr> 
+
+   <tr>
+      <th>RoBERTa - Base (25 epochs)</th>
+   <th>Tweet Data</th>
+   <th>0.736</th>
+   <th>0.739</th>
+   <th>0.736</th>
+  </tr> 
+  
   
 </table>
 
-### Scores : Training on undersampled Dataset
-
-<table>
-  <tr>
-    <th>Dataset</th>
-    <th>Accuracy</th>
-    <th>Precision</th>
-    <th>Recall</th>
-    <th>F1</th>
-  </tr>
-  <tr>
-    <th>Test Data</th>
-    <th>0.</th>
-    <th>0.</th>
-    <th>0.</th>
-    <th>0.</th>
-  </tr>
-  <tr>
-    <th>Dev Test Data</th>
-    <th>0.</th>
-    <th>0.</th>
-    <th>0.0.</th>
-    <th>0.</th>
-  </tr>
-   <tr>
-    <th>Tweet Test Data</th>
-    <th>0.</th>
-    <th>0.</th>
-    <th>0.</th>
-    <th>0.</th>
-  </tr>
-  
-</table>
-
-# DEBERTA-V3-LARGE (English Data Set)
-## Score
-<table>
-  <tr>
-    <th>Dataset</th>
-    <th>Accuracy</th>
-    <th>Precision</th>
-    <th>Recall</th>
-    <th>F1</th>
-  </tr>
-  <tr>
-    <th>Test Data</th>
-    <th>0.83</th>
-    <th>0.83</th>
-    <th>0.83</th>
-    <th>0.81</th>
-  </tr>
-  <tr>
-    <th>Dev Test Data</th>
-    <th>0.85</th>
-    <th>0.86</th>
-    <th>0.0.85</th>
-    <th>0.84</th>
-  </tr>
-   <tr>
-    <th>Tweet Test Data</th>
-    <th>0.77</th>
-    <th>0.78</th>
-    <th>0.77</th>
-    <th>0.77</th>
-  </tr>
-  
-</table>
-
-## Result On UnderSampled Data
---------- ***** ---------
-
-## Result for Tweet DataSet
----------- **** ---------
 <!-- ###########################################################################################################################--->
 # Dutch
 
