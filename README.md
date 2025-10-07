@@ -765,7 +765,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 </tr>
 </table>
 
-## Result
+## Best performance on the Arabic dataset (Dev-Test data):
+
 <table border="1">
   <tr>
     <th>Models</th>
@@ -773,163 +774,54 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>Precision</th>
     <th>Recall</th>
     <th>F1 Score</th>
-    <th>Confusion Matrix</th>
+    
   </tr>
   <tr>
-    <th>Decision Tree Classifier</th>
-    <th>0.911</th>
-    <th>0.912</th>
-    <th>0.911</th>
-    <th>0.911</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/c8de8650-6ba9-4f79-8271-80ec120ddcfe" /></th>
+    <th>Random Forest Classifier</th>
+    <th>0.754</th>
+    <th>0.0.569</th>
+    <th>0.0.754</th>
+    <th>0.648</th>
+    
   </tr>
   <tr>
-    <th>KNN Classifier</th>
-    <th>1.00</th>
-    <th>1.00</th>
-    <th>1.00</th>
-    <th>1.00</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/c8506364-b6ae-4faa-9e15-e05db83e5af9" /></th>
+    <th>XGB Classifier</th>
+    <th>0.572</th>
+    <th>0.698</th>
+    <th>0.572</th>
+    <th>0.602</th>
+    
   </tr>
 
   
    <tr>
-    <th>XGB Classifier</th>
-    <th>0.936</th>
-    <th>0.945</th>
-    <th>0.936</th>
-    <th>0.937</th>
+    <th>Logistic Regression</th>
+    <th>0.538</th>
+    <th>0.700</th>
+    <th>0.538</th>
+    <th>0.568</th>
      <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/c8202113-44b9-45e0-9dc8-8f5b872f7587" /></th>
   </tr>
 
   <tr>
-    <th>Random Forest Classifier</th>
-    <th>0.924</th>
-    <th>0.389</th>
-    <th>0.624</th>
-    <th>0.479</th>
+    <th>Voating Classifier (soft: RF + XGB + DT + KNN)</th>
+    <th>0.486</th>
+    <th>0.706</th>
+    <th>0.486</th>
+    <th>0.508</th>
     <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/b995591c-323e-4814-9a6f-38b0e2c968cc" /></th>
   </tr>
 
   <tr>
-    <th>Gradient Boosting Classifier</th>
-    <th>0.995</th>
-    <th>0.995</th>
-    <th>0.995</th>
-    <th>0.995</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/d5f2155d-b4b2-4213-bbf2-8d92611873e5" /></th>
+    <th>Voating Classifier (hard: RF + XGB + DT + KNN)</th>
+    <th>0.478</th>
+    <th>0.703</th>
+    <th>0.478</th>
+    <th>0.499</th>
+   
   </tr>
 
-   <tr>
-    <th>Light GBM Classifier</th>
-    <th>0.993</th>
-    <th>0.993</th>
-    <th>0.993</th>
-    <th>0.993</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/f84bed07-b914-4796-9179-42a3733333d8" /></th>
-  </tr>
-
-  <tr>
-    <th>Ada Boost Classifier</th>
-    <th>0.743</th>
-    <th>0.775</th>
-    <th>0.743</th>
-    <th>0.710</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/e60d7817-1c04-4466-b1c7-48a7683f9932" /></th>
-  </tr>
-
-  <tr>
-    <th>Logistic Regression</th>
-    <th>0.376</th>
-    <th>0.141</th>
-    <th>0.376</th>
-    <th>0.206</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/bddf9b3d-b294-4ca7-9620-6e7488f9a8e9" /></th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb')</th>
-    <th>0.979</th>
-    <th>0.980</th>
-    <th>0.979</th>
-    <th>0.979</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/e00ff91a-519b-44a2-ba41-0e5144b9f315" /></th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb')</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/33bd3679-a030-4ac0-afc9-ff66008016ff" /></th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('gdb', 'lgbm', 'adb')</th>
-    <th>0.998</th>
-    <th>0.998</th>
-    <th>0.998</th>
-    <th>0.998</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/4d301094-48b6-450b-9a20-cbbd54dc3cd7" /></th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'adb')</th>
-    <th>0.981</th>
-    <th>0.981</th>
-    <th>0.981</th>
-    <th>0.981</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/bd23d42d-abaa-4ad0-905f-7f966b3d27c8" /></th>
-  </tr>
-
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt')</th>
-    <th>0.911</th>
-    <th>0.912</th>
-    <th>0.911</th>
-    <th>0.911</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/c7a01ac9-c1e1-4477-9b55-a620308a47ba" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('xgb', 'lgbm', 'adb', 'lr')</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th>0.997</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/1e14fe8b-24df-423a-a6f7-f336a81c9a7a" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf')</th>
-    <th>0.999</th>
-    <th>0.999</th>
-    <th>0.999</th>
-    <th>0.999</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/05bdad50-43dc-45ce-9fd6-5d0029f3ae69" /></th>
-  </tr>
   
-  <tr>
-    <th>Blending Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb'), Meta Model : ('lr')</th>
-    <th>0.624</th>
-    <th>0.389</th>
-    <th>0.624</th>
-    <th>0.479</th>
-    <th><img width="1080" height="960" alt="Image" src="https://github.com/user-attachments/assets/b998c597-8e73-4a4b-822f-a12e4819f6b6" /></th>
-  </tr>
-
-  <tr>
-    <th>Stacking Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'gdb', 'lgbm', 'adb'), Meta Model : ('lr')</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-    <th></th>
-  </tr>
 </table>
 
 <!-- ############################################################################################################################--->
@@ -960,7 +852,7 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 </tr>
 </table>
 
-## Result
+## Best performing model on the spanish data set (dev-test):
 <table border="1">
   <tr>
     <th>Models</th>
@@ -968,196 +860,159 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
     <th>Precision</th>
     <th>Recall</th>
     <th>F1 Score</th>
-    <th>Confusion Matrix</th>
+    
   </tr>
+  <tr>
+    <th>Gradient Boosting</th>
+    <th>0.900</th>
+    <th>0.872</th>
+    <th>0.900</th>
+    <th>0.874</th>
+
+  </tr>
+  <tr>
+    <th>Light GBM</th>
+    <th>0.878</th>
+    <th>0.835</th>
+    <th>0.878</th>
+    <th>0.852</th>
+
+  </tr>
+
+  
+   <tr>
+    <th>AdaBoost</th>
+    <th>0.898</th>
+    <th>0.863</th>
+    <th>0.898</th>
+    <th>0.859</th>
+
+  </tr>
+
+  <tr>
+    <th>XGB Classifier</th>
+    <th>0.848</th>
+    <th>0.845</th>
+    <th>0.848</th>
+    <th>0.846</th>
+
+  </tr>
+
+  <tr>
+    <th>Voating Classifier (Soft: GDB + LGBM + ADB)</th>
+    <th>0.894</th>
+    <th>0.854</th>
+    <th>0.894</th>
+    <th>0.861</th>
+
+  </tr>
+
+   <tr>
+    <th>Voating Classifier (Hard: GDB + LGBM + ADB)</th>
+    <th>0.897</th>
+    <th>0.860</th>
+    <th>0.897</th>
+    <th>0.861</th>
+
+  </tr>
+
+<tr>
+    <th>Voating Classifier (Soft: GDB + XGB + LR)</th>
+    <th>0.871</th>
+    <th>0.855</th>
+    <th>0.871</th>
+    <th>0.862</th>
+
+  </tr>
+
+  <tr>
+    <th>KNN</th>
+    <th>0.849</th>
+    <th>0.835</th>
+    <th>0.849</th>
+    <th>0.842</th>
+    
+  </tr>
+
   <tr>
     <th>Decision Tree Classifier</th>
-    <th>0.809</th>
-    <th>0.801</th>
-    <th>0.809</th>
-    <th>0.805</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/e11ac864-067c-4e3b-8d5d-5c76d39d9e9d" />
-</th>
-  </tr>
-  <tr>
-    <th>KNN Classifier</th>
-    <th>0.789</th>
-    <th>0.773</th>
-    <th>0.789</th>
-    <th>0.781</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/c04b6964-2d49-4d19-a8ce-fe7ad334e3d8" />
-</th>
+    <th>0.840</th>
+    <th>0.842</th>
+    <th>0.840</th>
+    <th>0.841</th>
   </tr>
 
   
-   <tr>
-    <th>XGB Classifier</th>
-    <th>0.837</th>
-    <th>0.808</th>
-    <th>0.837</th>
-    <th>0.819</th>
-     <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/2809bed7-b55d-42b0-b9b3-7061e8adb5cb" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Random Forest Classifier</th>
-    <th>0.516</th>
-    <th>0.829</th>
-    <th>0.516</th>
-    <th>0.582</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/28e28983-3a10-4334-8c0e-cdf39924eb62" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Gradient Boosting Classifier</th>
-    <th>0.867</th>
-    <th>0.839</th>
-    <th>0.867</th>
-    <th>0.834</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/b24a946b-0aa3-4681-bd6a-808b775af509" />
-</th>
-  </tr>
-
-   <tr>
-    <th>Light GBM Classifier</th>
-    <th>0.859</th>
-    <th>0.816</th>
-    <th>0.859</th>
-    <th>0.817</th>
-     <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/42f1b2a2-8dfd-4e87-9db6-a7d59e87bc8a" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Ada Boost Classifier</th>
-    <th>0.860</th>
-    <th>0.816</th>
-    <th>0.860</th>
-    <th>0.805</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/6fc348e4-8104-4190-89a6-6967c3ad378e" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Logistic Regression</th>
-    <th>0.791</th>
-    <th>0.800</th>
-    <th>0.791</th>
-    <th>0.795</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/8d0447bb-02e0-4957-bf86-b749c228d63a" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb')</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb')</th>
-   <th>-</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('gdb', 'lgbm', 'adb')</th>
-    <th>0.865</th>
-    <th>0.838</th>
-    <th>0.865</th>
-    <th>0.821</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/c95dbdcb-1586-45e2-bf5c-031b27fccaa4" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'adb')</th>
-    <th>0.847</th>
-    <th>0.805</th>
-    <th>0.847</th>
-    <th>0.816</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/2663cf0d-61c5-4ab9-85e7-5dd584cc9588" />
-</th>
-  </tr>
-
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('rf', 'xgb', 'dt')</th>
-    <th>0.823</th>
-    <th>0.804</th>
-    <th>0.823</th>
-    <th>0.812</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/b4df726f-57d9-4408-89fb-803f87fec2af" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('xgb', 'lgbm', 'adb', 'lr')</th>
-    <th>0.857</th>
-    <th>0.820</th>
-    <th>0.857</th>
-    <th>0.825</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/15606234-26cd-4614-a591-5495d9d278ec" />
-</th>
-  </tr>
-
-  <tr>
-    <th>Voating Classifier, Ensembled Models: ('dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf')</th>
-   <th>0.863</th>
-    <th>0.828</th>
-    <th>0.863</th>
-    <th>0.823</th>
-    <th><img width="1080" height="960" alt="image" src="https://github.com/user-attachments/assets/c13fc6ef-96ef-4693-a791-c02efd494a11" />
-</th>
-  </tr>
-  
-  <tr>
-    <th>Blending Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb'), Meta Model : ('lr')</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-  </tr>
-
-  <tr>
-    <th>Stacking Classifier, Base Models: ('rf', 'xgb', 'dt', 'knn', 'gdb', 'lgbm', 'adb'), Meta Model : ('lr')</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-    <th>-</th>
-  </tr>
 </table>
 
 
 # MultiLingual Data (Arabic, Spanish, English, Dutch)
-## MultiLingual BERT (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
+# MultiLingual BERT (PEFT) QLoRA
 
-### Evaluation Dataset Scores
+### Performance of Multilingual BERT (trained with QLoRA) on merged dataset
 
-| Metric     | Value        |
-|------------|--------------|
-| Accuracy   | -            |
-| F1 Score   | -            |
-| Precision  |-             |
-| Recall     | -            |
+<table border="1">
+  <tr>
+    <th>Epochs</th>
+    <th>Datasets</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>F1 Score</th>
+    
+  </tr>
+  <tr>
+    <th>3</th>
+    <th>Test</th>
+    <th>0.865</th>
+    <th>0.852</th>
+    <th>0.847</th>
 
-## XLM RoBERTa (PEFT) QLoRA, Model: Microsoft BERT (Encoder)
+  </tr>
+  <tr>
+    <th>3</th>
+    <th>Dev Test</th>
+    <th>0.834</th>
+    <th>0.820</th>
+    <th>0.819</th>
 
-### Evaluation Dataset Scores
+  </tr>
 
-| Metric     | Value        |
-|------------|--------------|
-| Accuracy   | -            |
-| F1 Score   | -            |
-| Precision  |-             |
-| Recall     | -            |
+  
+   <tr>
+    <th>8</th>
+    <th>Test</th>
+    <th>0.872</th>
+    <th>0.862</th>
+    <th>0.858</th>
 
+  </tr>
+  <tr>
+    <th>8</th>
+    <th>Dev Test</th>
+    <th>0.842</th>
+    <th>0.831</th>
+    <th>0.832</th>
+
+  </tr>
+<tr>
+    <th>20</th>
+    <th>Test</th>
+    <th>0.879</th>
+    <th>0.869</th>
+    <th>0.868</th>
+
+  </tr>
+  <tr>
+    <th>20</th>
+    <th>Dev Test</th>
+    <th>0.846</th>
+    <th>0.835</th>
+    <th>0.836</th>
+
+  </tr>
+
+  
+</table>
 
 ## This result has already surpassed the best scores from CLEF 2024, as seen [here](https://checkthat.gitlab.io/clef2024/task1/).
 
