@@ -424,6 +424,86 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 </tr>
 </table>
 
+## Result
+<table border="1">
+  <tr>
+    <th>Models</th>
+    <th>Accuracy</th>
+    <th>Precision</th>
+    <th>Recall</th>
+    <th>F1 Score</th>
+  </tr>
+  <tr>
+    <th>KNN Classifier</th>
+    <th>0.518</th>
+    <th>0.0.521</th>
+    <th>0.0.518</th>
+    <th>0.0.518</th>
+  </tr>
+  <tr>
+    <th>Decision Tree Classifier</th>
+    <th>0.538</th>
+    <th>0.545</th>
+    <th>0.538</th>
+    <th>0.534</th>
+  </tr>
+
+  
+   <tr>
+    <th>Light GBM</th>
+    <th>0.506</th>
+    <th>0.506</th>
+    <th>0.506</th>
+    <th>0.506</th>
+  </tr>
+
+  <tr>
+    <th>Gradient Boosting</th>
+    <th>0.498</th>
+    <th>0.493</th>
+    <th>0.498</th>
+    <th>0.492</th>
+  </tr>
+
+  <tr>
+    <th>Random Forest</th>
+    <th>0.494</th>
+    <th>0.500</th>
+    <th>0.494</th>
+    <th>0.489</th>
+  </tr>
+
+   <tr>
+    <th>Voting(Soft: XGB + GDB + LR)</th>
+    <th>0.505</th>
+    <th>0.507</th>
+    <th>0.505</th>
+    <th>0.504</th>
+  </tr>
+
+  <tr>
+    <th>Voating(Soft: decision tree + KNN + random forest + XGB)</th>
+    <th>0.508</th>
+    <th>0.522</th>
+    <th>0.508</th>
+    <th>0.490</th>
+  </tr>
+
+  <tr>
+    <th>Voating (Hard: Decision TRee + KNN  + Random Forest + XGB)</th>
+    <th>0.520</th>
+    <th>0.525</th>
+    <th>0.520</th>
+    <th>0.517</th>
+  </tr>
+
+</table>
+
+
+
+
+
+
 <!-- ############################################################################################################################--->
 
 # Arabic
