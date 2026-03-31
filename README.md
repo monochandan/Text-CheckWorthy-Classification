@@ -668,9 +668,9 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   <tr>
     <th>KNN Classifier</th>
     <th>0.518</th>
-    <th>0.0.521</th>
-    <th>0.0.518</th>
-    <th>0.0.518</th>
+    <th>0.521</th>
+    <th>0.518</th>
+    <th>0.518</th>
   </tr>
   <tr>
     <th>Decision Tree Classifier</th>
