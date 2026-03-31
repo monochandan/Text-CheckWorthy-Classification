@@ -779,8 +779,8 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
   <tr>
     <th>Random Forest Classifier</th>
     <th>0.754</th>
-    <th>0.0.569</th>
-    <th>0.0.754</th>
+    <th>0.569</th>
+    <th>0.754</th>
     <th>0.648</th>
     
   </tr>
