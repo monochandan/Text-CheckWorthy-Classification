@@ -11,6 +11,45 @@
 
 ## Result:
 ```
+Decision Tree Classifier:
+Accuracy: 0.686
+Precision: 0.680
+Recall: 0.686
+F1 Score: 0.682
+
+KNN Classifier:
+Accuracy: 0.742
+Precision: 0.738
+Recall: 0.742
+F1 Score: 0.732
+
+XGB:
+Accuracy: 0.783
+Precision: 0.792
+Recall: 0.783
+F1 Score: 0.769
+
+Random Forest Classifier:
+Accuracy: 0.753
+Precision: 0.764
+Recall: 0.753
+F1 Score: 0.732
+
+Gradient Boosting Classifier
+Accuracy: 0.765
+Precision: 0.779
+Recall: 0.765
+F1 Score: 0.746
+
+Light GBM Classifier:
+Accuracy: 0.750
+Precision: 0.786
+Recall: 0.750
+F1 Score: 0.718
+
+Logistic Regression:
+.......
+
 VOATING CLASSIFIER:
 Classifiers used: ['dt', 'knn', 'rf', 'xgb']
 Accuracy: 0.787
