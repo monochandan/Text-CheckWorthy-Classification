@@ -55,10 +55,44 @@ Recall: 0.787
 F1 Score: 0.770
 
 STACKING CLASSIFIER:
+
 Classifiers Used ['dt', 'knn', 'rf', 'xgb']
 Accuracy: 0.770
 Precision: 0.786
 Recall: 0.770
 F1 Score: 0.752
+
+Classifiers Used ['rf', 'xgb', 'dt', 'knn', 'lgbm', 'adb']
+Accuracy: 0.770
+Precision: 0.789
+Recall: 0.770
+F1 Score: 0.751
+
+Classifiers Used ['gdb', 'lgbm', 'adb']
+Accuracy: 0.769
+Precision: 0.797
+Recall: 0.769
+F1 Score: 0.745
+
+Classifiers Used ['dt', 'knn', 'rf', 'xgb', 'adb']
+Accuracy: 0.768
+Precision: 0.783
+Recall: 0.768
+F1 Score: 0.749
+
+Classifiers Used ['rf', 'xgb', 'dt']
+Accuracy: 0.776
+Precision: 0.794
+Recall: 0.776
+F1 Score: 0.757
+
+Classifiers Used ['xgb', 'lgbm', 'adb', 'lr']
+Accuracy: 0.769
+Precision: 0.787
+Recall: 0.769
+F1 Score: 0.749
+
+Classifiers Used ['dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf']
+
 ```
    
