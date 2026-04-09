@@ -5,7 +5,7 @@
 2. Used [CLIP](https://huggingface.co/docs/transformers/v5.5.0/en/model_doc/clip#transformers.CLIPProcessor) to create embeddings.
 3. Only 2 embeddings (image embeddings, text embeddings) used as features.
 4. Train data on classical models, [votinclassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html), [stackingclassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html#)
-   with multiple different setups from (ensemble.py)[]
+   with multiple different setups from [ensemble.py](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/Ensembling_techniques/Ensemble.py)
 5. models Parameters tuned on [parameter]()
 
 ## Result:
