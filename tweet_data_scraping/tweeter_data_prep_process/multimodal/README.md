@@ -1,6 +1,6 @@
 # Working on [multimodal](https://aclanthology.org/2022.findings-naacl.72.pdf) data set. 
 
-## Initial classical models:
+## Initial classical models (text + image):
 1. Image caption and OCR text and Image were used as features.
 2. Used [CLIP](https://huggingface.co/docs/transformers/v5.5.0/en/model_doc/clip#transformers.CLIPProcessor) to create embeddings.
 3. Only 2 embeddings (image embeddings, text embeddings) used as features.
@@ -134,7 +134,7 @@ F1 Score: 0.749
 Classifiers Used ['dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf']
 
 ```
-## Initial Deep Neural Network Models:
+## Initial Deep Neural Network Models (text + image):
 
 
    
