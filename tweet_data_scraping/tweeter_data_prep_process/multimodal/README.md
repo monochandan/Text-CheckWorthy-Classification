@@ -6,7 +6,7 @@
 3. Only 2 embeddings (image embeddings, text embeddings) used as features.
 4. Train data on classical models, [votinclassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html), [stackingclassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html#)
    with multiple different setups from [ensemble.py](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/Ensembling_techniques/Ensemble.py)
-5. models Parameters tuned on [parameter](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/hp-tuning/hp-tuning.ipynb)
+5. models [parameters](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/hp-tuning/hp-tuning.ipynb) tuned on the data
 
 
 ## Result:
