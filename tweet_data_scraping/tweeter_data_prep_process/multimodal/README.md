@@ -1,4 +1,4 @@
-# Working on multimodal data set: https://aclanthology.org/2022.findings-naacl.72.pdf
+# Working on [multimodal](https://aclanthology.org/2022.findings-naacl.72.pdf) data set. 
 
 ## Initial process:
 1. Image caption and OCR text and Image were used as features.
