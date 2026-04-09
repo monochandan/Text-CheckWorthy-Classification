@@ -1,14 +1,14 @@
 # Working on multimodal data set: https://aclanthology.org/2022.findings-naacl.72.pdf
 
-# Initial process:
-1. Image caption and OCR text, Image.
+## Initial process:
+1. Image caption and OCR text and Image were used as features.
 2. Used [CLIP](https://huggingface.co/docs/transformers/v5.5.0/en/model_doc/clip#transformers.CLIPProcessor) to create embeddings.
-3. Only 2 embeddings used as features.
+3. Only 2 embeddings (image embeddings, text embeddings) used as features.
 4. Train data on classical models, [votinclassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html), [stackingclassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html#)
    with multiple different setups from (ensemble.py)[]
 5. models Parameters tuned on [parameter]()
 
-# Result:
+## Result:
 ```
 VOATING CLASSIFIER:
 Classifiers used: ['dt', 'knn', 'rf', 'xgb']
