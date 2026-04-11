@@ -136,7 +136,7 @@ Classifiers Used ['dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf']
 ```
 ## Initial Deep Neural Network Models (text + image):
 
-### [Model]()
+### [Model](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/checkthat_mm_dnn.ipynb)
    - Tensorflow sequential API with dense layers
    - Data (image embedding, text embedding)
    
