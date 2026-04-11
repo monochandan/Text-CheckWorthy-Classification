@@ -139,4 +139,12 @@ Classifiers Used ['dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf']
 ### [Model](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/checkthat_mm_dnn.ipynb)
    - Tensorflow sequential API with dense layers
    - Data (image embedding, text embedding)
+
+```
+Accuracy: 0.7663043478260869
+Precision: 0.7312775330396476
+Recall: 0.5992779783393501
+F1 Score: 0.659
+
+```
    
