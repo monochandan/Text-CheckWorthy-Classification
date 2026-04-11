@@ -1019,6 +1019,6 @@ Achieved improved F1 scores compared to traditional ensemble methods (e.g., Voti
 [@checkThat](https://checkthat.gitlab.io/clef2024/task1/)
 <img width="506" alt="image" src="https://github.com/user-attachments/assets/e5e0c9f1-8f0a-485d-9d55-04adc89a4833" />``
 
-## [MultiModal (Image + Text)]([https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/checkthat_mm.ipynb](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/README.md))
+## [MultiModal (Image + Text)](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/README.md)
 
 
