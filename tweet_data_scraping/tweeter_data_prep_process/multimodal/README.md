@@ -136,5 +136,7 @@ Classifiers Used ['dt', 'knn', 'rf', 'xgb', 'gdb', 'lgbm', 'adb', 'lr', 'rf']
 ```
 ## Initial Deep Neural Network Models (text + image):
 
-
+### [Model]()
+   - Tensorflow sequential API with dense layers
+   - Data (image embedding, text embedding)
    
