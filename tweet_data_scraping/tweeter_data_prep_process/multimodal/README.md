@@ -1,6 +1,6 @@
 # Working on [multimodal](https://aclanthology.org/2022.findings-naacl.72.pdf) data set. 
 
-## Initial classical models (text + image):
+## Initial classical [models](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/checkthat_mm.ipynb) (text + image):
 1. Image caption and OCR text and Image were used as features.
 2. Used [CLIP](https://huggingface.co/docs/transformers/v5.5.0/en/model_doc/clip#transformers.CLIPProcessor) to create embeddings.
 3. Only 2 embeddings (image embeddings, text embeddings) used as features.
