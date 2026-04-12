@@ -147,4 +147,23 @@ Recall: 0.5992779783393501
 F1 Score: 0.659
 
 ```
+
+### Dataset Preparation for CNN
+```
+--/checkthat_mm
+   --/image
+      --/dev
+         --/dev_no
+         --/dev_yes
+      --/dev_test
+         --/dev_test_yes
+         --/dev_test_no
+      --/train
+         --/train_yes
+         --/train_no
+      --/test
+         --/test_yes
+         --/test_no
+   --/json files
+```
    
