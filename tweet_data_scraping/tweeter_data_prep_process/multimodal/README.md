@@ -149,6 +149,7 @@ F1 Score: 0.659
 ```
 
 ### Dataset Preparation for CNN
+- [LeNet](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/checkthat_cnn.ipynb)
 ```
 --/checkthat_mm
    --/image
