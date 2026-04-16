@@ -169,3 +169,5 @@ F1 Score: 0.659
 ```
 ### CNN Models
 - [LeNet](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/checkthat_cnn.ipynb)
+
+-  [VGG-16](https://github.com/monochandan/Text-CheckWorthy-Classification/blob/main/tweet_data_scraping/tweeter_data_prep_process/multimodal/multimodal_vgg_16.ipynb)
